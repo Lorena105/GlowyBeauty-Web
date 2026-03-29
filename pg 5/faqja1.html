@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kujdesi për Flokët</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Kujdesi për Flokët</h1>
+        <p>Eksploro kategoritë e ndryshme për të pasur flokë të shëndetshëm dhe të bukur. Zgjidh produktet që i përshtaten nevojave tuaja.</p>
+    </header>
+
+    <div class="categories">
+        <input type="checkbox" id="toggle-shampo">
+        <label for="toggle-shampo">Shampo</label>
+        <section class="product-list">
+            <div class="product">
+                <img src="images/Ami's Beauty Volume Boost Shampoo.jpg" alt="Ami's Beauty Volume Boost Shampoo">
+                <h3>Ami's Beauty Volume Boost Shampoo</h3>
+                <p class="Cmimi">990.00 L</p> 
+                <p class="product-status in-stock">In Stock</p>
+                <p>Shampo Volume Boost ndikon ne permiresimin e dendesise se flokeve.
+                    E pasur me vlera ushqyese, i jep volum flokeve dhe gjithashtu ushqen rrenjen.</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Apiue Raspberry Vinegar Hair Shampoo 500ml.jpg" alt="Apiue Raspberry Vinegar Hair Shampoo">
+                <h3>Apiue Raspberry Vinegar Hair Shampoo</h3>
+                <p class="Cmimi">1,700.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>  Kjo shampo permban pH te balancuar te mbushur me uthull dhe ekstrakt mjedre.
+                    Pastron floket dhe skalpin e kokes edhe nese eshte i irrituar duke lene nivele te larta hidratimi.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <button class="buy-now">Buy Now</button>
+                
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Cp1 Ginger Purifying Shampoo 100 ML.jpg" alt="Cp1 ginger Purifying Shampoo">
+                    <h3>Cp1 ginger Purifying Shampoo</h3>
+                    <p class="Cmimi">850.00 L</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>Nje shampo e cila eshte e pasur me vaj gingeri dhe ekstrakte te gingerit.
+                        Parandalon dhe permireson floket e demtuar duke i bere ata me te shendetshem dhe me te shendritshem.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Bumble And Bumble Repair Shampoo 250 ml.jpg"alt="Bumble And Bumble Repair Shampoo ">
+                    <h3>Bumble And Bumble Repair Shampoo </h3>
+                    <p class="Cmimi">3,000.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p> Nje shampo luksoze, restauruese e përditshme që krijon lidhje të reja për të forcuar fijet.
+                        Gjthashtu ndihmon në riparimin e dëmtimit nga korteksi në kutikula dhe forcon për t'u mbrojtur nga dëmtimet e ardhshme.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Color Wow Color Security Shampoo 250ml .jpg"alt="Color Wow Color Security Shampoo">
+                    <h3>Color Wow Color Security Shampoo</h3>
+                    <p class="Cmimi">2,400.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>Një formulë e pasur me shkumë, pa sulfate, pa mbetje për të gjitha llojet e flokëve.
+                        Ndryshe nga shumica e shampove, çdo përbërës shpëlahet për shëndetin optimal të flokëve dhe kokës.
+                        Shampo jonë e mbrojtjes së ngjyrave nuk përmban silikone, trashje, kondicioner ose përbërës kundër kërcitjes. </p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Champo Kapha Balancing Shampoo 260ml .jpg"alt="Champo Kapha Balancing shampoo 260ml">
+                    <h3>Champo Kapha Balancing shampoo 260ml</h3>
+                    <p class="Cmimi">2,000.00 L</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>Champo Kapha Balancing Shampoo është projektuar për te injektuar shkëlqimin në flokët e trashë, të plotë dhe me vaj.
+                       Eshtë formuluar me 98% përbërës natyralë, si vaji i kokosit dhe antioksidanti glukonolactone.
+                       Eshtë gjithashtu vegan, pa egërsi, pa silikone dhe pa paraben.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Aveda Color Control Shampoo 200 ml.jpg"alt="Aveda Color Control Shampoo 200 ml">
+                    <h3>Aveda Color Control Shampoo 200 ml</h3>
+                    <p class="Cmimi">2,900.00</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>Shampo 100% vegan, pa silikon, pastron butësisht flokët duke reduktuar në mënyrë efektive zbehjen e ngjyrës.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Kerastase Neutrive Bain Satin Riche Shampoo 250ml.jpg"alt="Kerastase Neutrive Bain Satin Riche Shampoo 250ml">
+                    <h3>Kerastase Neutrive Bain Satin Riche Shampoo 250ml</h3>
+                    <p class="Cmimi">3,200.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>Shampo Kerastase Nutritive Bain Satin Riche pastron dhe rimbush thellësisht lagështinë.
+                        Permban proteina me bazë bimore dhe niacinamide.Perdoret për flokë mesatarë në të trashë dhe të thatë.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+        </section>
+
+        <input type="checkbox" id="toggle-hair-treatment">
+        <label for="toggle-hair-treatment">Hair Treatment</label>
+        <section class="product-list">
+            <div class="product">
+                <img src="images\Ami's Beauty Argan Oil.jpg" alt="Ami's Beauty Argan Oil">
+                <h3>Ami's Beauty Argan Oil</h3>
+                <p class="Cmimi">1,800.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Ky vaj i flokeve eshte i pasuruar me vaj argani ,i cili eshte nje kure e vertete e vertete per floket.
+                    -Ushqen folikulat e flokeve ne thellesi.
+                    -Trajton majat e djegura dhe dyshe.
+                    -Mbron flokun nga këputja dhe redukton dëmtimet nga nxehtësia.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Coco & Eve Deep Clean Scalp Scrub 150ml Pa Kuti.jpg" alt="Coco & Eve Deep Clean Scalp Scrub 150ml">
+                    <h3>Coco & Eve Deep Clean Scalp Scrub 150ml</h3>
+                    <p class="Cmimi">2,300.00 L</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>Një skrab eksfolues i kokës i krijuar për të synuar thatësinë, yndyrën dhe zbokthin si një trajtim para shampos.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Cp1 Premium Hair Treatment 250ML.jpg" alt="Cp1 Premium Hair Treatment 250ML">
+                    <h3>Cp1 Premium Hair Treatment 250ML</h3>
+                    <p class="Cmimi">1,200.00 L</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>Premium Silk eshte trajtuesi me i kerkuar i cili ka ne permbajtje proteina te cilat bejne te mundur forcimin, riparimin dhe mbrojtjen e cdo fije floku,
+                         duke ju siguruar floke te shndrritshem dhe te shendetshem.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Apieu MINT SCALP & HAIR VINEGAR.jpg" alt="Apieu Mint Scalp & Hair Vinegar">
+                    <h3>Apieu Mint Scalp & Hair Vinegar</h3>
+                    <p class="Cmimi">1,300.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>Trajtim me uthull për flokët me nenexhik i cili është një kondicioner freskues i flokëve me uthull .
+                        Një kompleks me 3 nenexhik ftoh skalpin dhe ofron një ndjesi të këndshme shpimi gjilpërash që stimulon rritjen e flokëve.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Champo Scalp Massager.jpg" alt="Champo Scalp Massager">
+                    <h3>Champo Scalp Massager</h3>
+                    <p class="Cmimi">700.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>Masazhuesi i kokës me qime të buta të trasha silikoni stimulon rrjedhjen e gjakut në lëkurën e kokës dhe gjëndrat e yndyrës.
+                        Relaksoni muskujt e kokës dhe reduktoni stresin si dhe pastroni thelle lekuren e kokes.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Dr For Hair Unove Silk Essence.jpg"alt="Dr For Hair Unove Silk Essence">
+                    <h3>Dr For Hair Unove Silk Essence</h3>
+                    <p class="Cmimi">1,500.00 L</p>
+                    <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                    <p>UNOVE Silk Oil Essence është zgjidhja për flokët e dëmtuar, të çarë, të thatë dhe të ashpër të prirur ndaj thyerjes dhe skuqjes.
+                         Përdoret më së miri për rritjen e shkëlqimit, riparimin e dëmtimit të flokëve dhe majave të çara, si dhe ushqimin e flokëve të hollë dhe të ashpër.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Bread Hair Oil 30ml.jpg"alt="Bread Hair Oil 30ml">
+                    <h3>Bread Hair Oil 30ml</h3>
+                    <p class="Cmimi">1,500.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>  Bread Beauty Supply Hair-Oil eshte i sigurt për flokët e trajtuar me ngjyrë. 
+                         Ideal për përdorim në flokë kaçurrelë ose me teksturë, ky vaj flokësh punon për të siguruar lagështi dhe shkëlqim shtesë në të gjitha llojet e flokëve.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="images\Champo Weightless Hair Oil 28ml .jpg"alt="Champo Weightless Hair Oil 28ml">
+                    <h3>Champo Weightless Hair Oil 28ml</h3>
+                    <p class="Cmimi">2,700.00 L</p>
+                    <p class="product-status in-stock">In Stock</p>
+                    <p>Jeni të lodhur nga flokët e dredhur, të shurdhër dhe pa jetë?
+                         Atëherë mos shikoni më larg se vaji i flokëve pa peshë Champo, i projektuar për të lëmuar dhe për t'i kthyer një shkëlqim të shëndetshëm flokëve tuaj. </p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                </div>
+        </section>
+
+        <input type="checkbox" id="toggle-conditioner">
+        <label for="toggle-conditioner">Conditioner</label>
+        <section class="product-list">
+            <div class="product">
+                <img src="images\Aveda Color Control Conditioner 200 ml.jpg" alt="Aveda Color Control Conditioner 200 ml>                ">
+                <h3>Aveda Color Control Conditioner 200 ml</h3>
+                <p class="Cmimi">3,500.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p> Aveda Color Control Conditioner ushqen, mbron dhe mbyll flokët në mënyrë që të mbajë ngjyrën e flokëve tuaj të shkëlqyeshme dhe të freskët për sa më gjatë që të jetë e mundur.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Bondi Boost HG Conditioner 300 ml.jpg" alt="Bondi Boost HG Conditioner 300 ml">
+                <h3>Bondi Boost HG Conditioner 300 ml</h3>
+                <p class="Cmimi">2,500.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Një kondicioner vegan i formuluar për rënien e flokëve dhe i mundësuar nga aloe vera dhe përbërës të tjerë të butë 
+                    dhe me performancë të lartë me prejardhje bimore për flokë më të plotë dhe më të trashë.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Living Proof Frizz Conditioner 236ml.jpg" alt="Living Proof Frizz Conditioner 236ml">
+                <h3>Living Proof Frizz Conditioner 236ml</h3>
+                <p class="Cmimi">3,200.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p>Një kondicioner ushqyes që eliminon skuqjen, bllokon lagështinë,
+                     zbërthehet dhe shton shkëlqim për flokë dukshëm më të butë dhe më të shëndetshëm.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Function Of Beauty Color Protection.jpg" alt="Function Of Beauty Color Protection">
+                <h3>Function Of Beauty Color Protection</h3>
+                <p class="Cmimi">500.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p> Function Of Beauty Color Protection ju lejon të krijoni përzierjen perfekte të shampos dhe kondicionerit për llojin tuaj unik të flokëve,
+                     nivelin e lagështisë së flokëve dhe qëllimet e flokëve.</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Kevin.Murphy Hydrate-Me.Rinse 250ml .jpg" alt="Kevin.Murphy Hydrate-Me.Rinse 250ml">
+                <h3>Kevin.Murphy Hydrate-Me.Rinse 250ml</h3>
+                <p class="Cmimi">2,500.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Një kondicioner luksoz hidratues dhe zbutës, i krijuar për të rivendosur dhe rimbushur flokët që kanë nevojë për riparim.
+                     Ideale për flokë të thatë natyralisht ose për flokë që janë ekspozuar ndaj klimës së ashpër.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Living Proof Full Thickening Blow Dry Cream 109ml.jpg" alt="Living Proof Full Thickening Blow Dry Cream 109ml">
+                <h3>Living Proof Full Thickening Blow Dry Cream 109ml</h3>
+                <p class="Cmimi">3,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Një krem ​​stilues i lehtë që shton trashësinë me një nuancë kondicionimi për trup dhe plotësi natyrale, afatgjatë.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Bumble And Bumble Repair Conditioner 200ml.jpg" alt="Bumble And Bumble Repair Conditioner 200ml">
+                <h3>Bumble And Bumble Repair Conditioner 200ml</h3>
+                <p class="Cmimi">3,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Riparues dhe hidratues,  Bumble Repair Conditioner punon për të ndërtuar lidhje të reja për të forcuar fijet individuale.</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Champo Vata Hydrating Conditioner .jpg" alt="Champo Vata Hydrating Conditioner">
+               <h3>Champo Vata Hydrating Conditioner</h3>
+                <p class="Cmmi">2,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p> Vata Hydrating Conditioner eshte për flokë të thatë, të vështirë ose të dëmtuar që kërkojnë lagështi.
+                     Ushqen dhe zbut thellë, duke rikthyer elasticitetin, kontrollin dhe shkëlqimin e dëshiruar.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <input type="checkbox" id="toggle-mask">
+        <label for="toggle-mask">Maska</label>
+        <section class="product-list">
+           <div class="product">
+                 <img src="images\Clarins Masque Serum Liftant.jpg" alt="Clarins Masque Serum Liftant">
+                <h3>Clarins Masque Serum Liftant</h3>
+                <p class="Cmimi">500.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p>Clarins Masque Serum eshte nje produkt cilësor me rezultate të garantuara si dhe një produkt bukurie për kujdesin tuaj personal.</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Coco & Eve Pro Youth Hair & Scalp Mask 212 ml.jpg"alt="Coco & Eve Pro Youth Hair & Scalp Mask 212 ml">
+                <h3>Coco & Eve Pro Youth Hair & Scalp Mask 212 ml</h3>
+                <p class="Cmimi">3,500.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Përjetoni shëndetin maksimal të flokëve me maskën Coco & Eve Youth Revive Pro Hair & Scalp Mask.
+                     Formula është e pasuruar me ekstrakte të fuqishme natyrore, duke përfshirë vajin Moringa, për të siguruar hidratim të thellë, te flokeve tuaj.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Color Wow Money Mask 215 ml.jpg"alt="Color Wow Money Mask 215 ml">
+                <h3>Color Wow Money Mask 215 ml</h3>
+                <p class="Cmimi">4,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Trajtim hidratues i thellë i flokëve për të gjitha llojet e flokëve.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Olaplex N8 Bond Intense Moisture Mask 100 ml.jpg"alt="Olaplex N8 Bond Intense Moisture Mask 100 ml">
+                <h3>Olaplex N8 Bond Intense Moisture Mask 100 ml</h3>
+                <p class="Cmimi">3,000.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p>Formula shumë e përqendruar përthithet thellë për të trajtuar dëmtimet.
+                    Shton shkëlqim, butësi dhe trup për flokë dukshëm më të shëndetshëm në 10 minuta.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Percy & Reed Hydrating TLC Mask 50ml.jpg"alt="Percy & Reed Hydrating TLC Mask 50ml">
+                <h3>Percy & Reed Hydrating TLC Mask 50ml</h3>
+                <p class="Cmimi">2,400.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>Pavarësisht se sa të trashë apo të hollë janë flokët tuaj, të gjitha fijet kanë nevojë për një gjë: lagështi. 
+                    I mbushur me përbërës ushqyes si vaji i kokosit, i lë flokët të butë e të menaxhueshëm.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Percy Reed Wonder Overnight Recovery Mask 150 ml.jpg"alt="Percy Reed Wonder Overnight Recovery Mask 150 ml">
+                <h3>Percy Reed Wonder Overnight Recovery Mask 150 ml</h3>
+                <p class="Cmimi">2,500.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p>Maska e flokëve Percy Reed Wonder Recovery Mask gjatë natës, transformon flokët e lodhur me hidratim të thellë si dhe
+                     riparon flokët e dëmtuar dhe të thatë menjëherë</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+        </section>
+
+        <input type="checkbox" id="toggle-hair-parfume">
+        <label for="toggle-hair-parfume">Hair Parfume</label>
+        <section class="product-list">
+            <div class="product">
+                <img src="images\Givenchy L'interdit Hair Mist 35 ml.jpg" alt="Givenchy L'interdit Hair Mist 35 ml">
+                <h3>Givenchy L'interdit Hair Mist 35 ml</h3>
+                <p class="Cmimi">6,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p> Me L'Interdit Hair Mist ,flokët janë të sublimuara, duke u ndjerë si mëndafsh-butë me një shkëlqim të bukur.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\Sol De Janeiro Cheirosa '62 Hair & Body Fragrance Mist.jpg"alt="Sol De Janeiro Cheirosa '62 Hair & Body Fragrance Mist">
+                <h3>Sol De Janeiro Cheirosa '62 Hair & Body Fragrance Mist</h3>
+                <p class="Cmimi">3,000.00 L</p>
+                <p class="product-status out-of-stock" style="color:red">Out Of Stock</p>
+                <p> Frymëzuar nga plazhet e Rio de Zhaneiros, është e mbushur me karamel të kripur, fëstëk dhe vanilje dekadente.
+                    Ka erë vere dhe jep atmosferë të ngrohtë plazhi.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\COCO MADEMOISELLE.jpg"alt="COCO MADEMOISELLE">
+                <p>COCO MADEMOISELLE</p>
+                <p class="Cmimi">6,000.00 L</p>
+                <p class="product-status in-stock">In Stock</p>
+                <p>PARFUMI COCO MADEMOISELLE HAIR aromatizon flokët me notat më të ajrosura, më të freskëta dhe më delikate të aromës, 
+                    duke zbuluar një gjurmë delikate arome me çdo lëvizje të flokëve tuaj.</p>
+                 <div class="quantity-control">
+                    <button onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" value="1" readonly class="quantity">
+                    <button onclick="increaseQuantity(this)">+</button>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+        </div>
+        </section>
+    </div>
+    
+    <script>
+        function increaseQuantity(button) {
+            var quantityInput = button.previousElementSibling;
+            var quantity = parseInt(quantityInput.value);
+            quantityInput.value = quantity + 1;
+        }
+        function decreaseQuantity(button) {
+            var quantityInput = button.nextElementSibling;
+            var quantity = parseInt(quantityInput.value);
+            if (quantity > 1) {
+                quantityInput.value = quantity - 1;
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; Glowy Beauty</p>
+    </footer>
+
+</body>
+</html>

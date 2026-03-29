@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA; 
+            scroll-behavior: smooth; 
+        }
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin: 10px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .category-box {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .category-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .category-box span {
+            z-index: 1;
+        }
+
+       
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2b053690;
+            padding: 10px;
+            position: relative;
+        }
+        .nav-item {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .nav-item:hover {
+            color: #f1c40f; 
+        }
+
+        
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #d9d9f4; 
+        }
+        .section p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        
+        #cart {
+            background-color: #3a074657; 
+        }
+        #contact {
+            background-color: #e9b9f3;
+        }
+
+       
+        @media (max-width: 768px) {
+            .category-container {
+                flex-direction: column;
+            }
+            .category-box {
+                width: 90%;
+                height: 250px;
+            }
+            .nav-bar {
+                flex-direction: column;
+            }
+            .nav-item {
+                margin: 10px 0;
+            }
+            .cart-icon {
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+#cart p {
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    color: #333;
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="projekt juli/images/faqjakryes.img1.jpg" alt="imazhi Kryesor">
+        <div class="header-title">GLOWY BEAUTY</div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="#categories" class="nav-item">Kategoritë</a>
+        <a href="#cart" class="nav-item">Rreth nesh</a>
+        <a href="#contact" class="nav-item">Kontakt</a>
+        <a href="projekt juna/shportaa.html" class="cart-icon" style="margin-left: 35px; font-size: 25px; position: relative; top: -7px;">&#128722;</a>
+    </nav>
+
+    <!-- Sections -->
+    <div id="categories" class="category-container">
+        <a href="projekt juna/projekt.html" class="category-box" style="background-image: url('projekt juli/images/faqjakryes.makeup.jpg');">
+            <span>Makeup</span>
+        </a>
+        <a href="projekt lori/projekt.html" class="category-box" style="background-image: url('projekt juli/images/faqekryes.skincare.jpg');">
+            <span>Kujdesi per lekuren</span>
+        </a>
+        <a href="projekt jonida/images/imazhet/Detyra Kryesore Html.html" class="category-box" style="background-image: url('projekt juli/images/faqjakryes.bodycare.jpg');">
+            <span>Kujdesi per trupin</span>
+        </a>
+        <a href="projekt leinada/faqja1.html" class="category-box" style="background-image: url('projekt juli/images/faqjakryes.haircare.webp');">
+            <span>Kujdesi per floket</span>
+        </a>
+        <a href="projekt elja/sektoriparfume.html" class="category-box" style="background-image: url('projekt juli/images/faqekryes.parfume.jpg');">
+            <span>Parfum</span>
+        </a>
+        <a href="projekt juli/faqja1.html" class="category-box" style="background-image: url('projekt juli/images/faqjakryes.produktecoreane.webp');">
+            <span>Produkte koreane</span>
+        </a>
+    </div>
+
+    <!-- About us Section -->
+    <div id="cart" class="section">
+        <h2 style="font-family: Monotype Corsiva;">Rreth Nesh</h2>
+        <p style="font-family:Monotype Corsiva;">Ne jemi të përkushtuar për të sjellë bukurinë dhe kujdesin për lëkurën tuaj në një nivel tjetër!<br>
+           Me një koleksion të veçantë produktesh makeup-i dhe skincare-i të krijuara nga përbërës cilësorë<br>
+           dhe të testuar dermatologjikisht, ne ofrojmë zgjidhje që pasqyrojnë stilin dhe elegancën tuaj natyrale.<br>
+           Misioni ynë është të frymëzojmë vetëbesim dhe shkëlqim çdo ditë, duke u kujdesur që çdo produkt të <br>
+           përmbushë nevojat unike të klientëve tanë. Bukuria juaj është prioriteti ynë!
+        </p>
+    </div>
+
+<!-- Contact Section -->
+<div id="contact" class="section" style="background-color: #ebb8fc53; padding: 20px; text-align: center;">
+    <h2 style="font-family: Arial, sans-serif; color: #333;"> Kontakt</h2>
+    <p style="font-family: Arial, sans-serif; color: #555; margin-bottom: 20px;">
+        Për çdo pyetje apo mbështetje, ju lutemi na kontaktoni në informacionet e mëposhtme:
+    </p>
+    
+    <div style="margin-bottom: 20px;">
+        <p><strong>Email:</strong> <a href="mailto:info@glowybeauty.com" style="color: #523f5b;">info@glowybeauty.com</a></p>
+        <p><strong>Telefon:</strong> <a href="tel:+35597737512" style="color:  #523f5b;">+355 977 375 12</a></p>
+    </div>
+    <div>
+        <p>Na ndiqni në rrjetet tona sociale:</p>
+        
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com" target="_blank" style="margin: 0 10px; color: rgb(47, 46, 46); text-decoration: none;">
+            <i class="fab fa-tiktok" style="font-size: 40px;"></i>
+        </a>
+        
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/glowybeauty" target="_blank" style="margin: 0 10px; color: black; text-decoration: none;">
+            <i class="fab fa-instagram" style="font-size: 47px;"></i>
+        </a>
+       
+        <!-- WhatsApp -->
+        <a href="https://wa.me/35597737512" target="_blank" style="margin: 0 10px; color: black; text-decoration: none;">
+            <i class="fab fa-whatsapp" style="font-size: 47px;"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Font Awesome Script-Burim per te perdorur ikonat -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+</html>

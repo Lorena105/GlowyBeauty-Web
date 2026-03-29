@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowy Beauty </title>
+    
+    <!-- Linku për Font Awesome për ikonat -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color:rgb(148, 82, 148);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shporta-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .shporta-link i {
+            margin-right: 5px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product .price {
+            font-size: 18px;
+            color: purple;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color:rgb(148, 82, 148) ;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+       
+        #cart-items {
+            padding: 20px;
+        }
+
+        .cart-item {
+            margin-bottom: 15px;
+        }
+
+        .cart-item p {
+            margin: 5px 0;
+        }
+        .zoom-image {
+    width: 100px;  
+    height: auto;  
+    
+}
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Glowy Beauty</h1>
+        <a href="shporta.html" class="shporta-link">
+            <i class="fas fa-shopping-cart"></i> Shporta (<span id="item-count">4</span> artikuj)
+        </a>
+    </header>
+
+    <!-- Produktet  -->
+    <div class="products">
+        <div class="product">
+            <img src="imazhet\1fenty.jpg" alt="Foundation">
+            <h3>Fenty Beauty foundation</h3>
+            <p class="price">4,200.00 L</p>
+        </div>
+
+        <div class="product">
+            <img src="imazhet\lips4.avif" alt="Lipstick">
+            <h3>NARS Lipstick</h3>
+            <p class="price"> 2,800.00 L</p>
+        </div>
+        
+        <div class="product">
+            <img src="imazhet\1eyeshadow.webp" alt="Eyeshadow">
+            <h3>Fenty Beauty Eyeshadow</h3>
+            <p class="price">2,500.00 L</p>
+            
+        </div>
+
+        <div class="product">
+            <img src="imazhet\1bdior.webp" alt="Blush">
+            <h3>Dior Blush</h3>
+            <p class="price">3,200.00 L</p>
+            
+        </div>
+        
+    </div>
+    <p class="total-price">Çmimi Total: <span id="total-price">12,700.00 L</span> </p> 
+    
+    
+    <script>
+       
+        let cart = [];
+
+        // Funksioni për të shtuar produkt në shportë
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        // Funksioni për të përditësuar numrin e artikujve dhe çmimin total në shportë
+        function updateCart() {
+            let itemCount = document.getElementById('item-count');
+            itemCount.innerText = cart.length;
+
+            // Llogaritja e çmimit total
+            let totalPrice = cart.reduce((total, item) => total + item.price, 0);
+            let totalPriceDisplay = document.getElementById('total-price');
+            totalPriceDisplay.innerText = totalPrice.toFixed(2) + " L";
+
+            // Ruaj shportën dhe çmimin total në localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Kur faqja ngarkohet, kontrollo dhe shfaq produktet në shportë dhe çmimin total
+        window.onload = function() {
+            if (localStorage.getItem('cart')) {
+                cart = JSON.parse(localStorage.getItem('cart'));
+                updateCart();
+            }
+        }
+    </script>
+    <tr>
+
+
+        <footer>
+            <p> &copy; Glowy Beauty</p>
+        </footer>
+   
+
+</body>
+</html>
+

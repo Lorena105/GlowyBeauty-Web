@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte Kozmetike për Kujdesin ndaj Lekurës</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+    <img src="pictures/imagee.jpeg" alt="Foto mbi header" style="width: 100%; height: 200px;">
+    <header>
+        <h1>Kujdesi per Lekuren</h1>
+        <p>Zbuloni markat me te mira dhe produktet me cilesore per kujdesin ndaj lekures ne Glowy Beauty</p>
+        <input type="text" id="searchInput" placeholder="Kërko për produkte..." oninput="searchProducts()" 
+        style="width: 25% ; height: 23px; font-size: large;">
+        
+    </header>
+    
+
+    <nav>
+        <a class="nav-link" onclick="showCategory('lares')">Lares Fytyre</a>
+        <a class="nav-link" onclick="showCategory('kremra')">Krem Hidratues</a>
+        <a class="nav-link" onclick="showCategory('serume')">Serume</a>
+        <a class="nav-link" onclick="showCategory('spf')">SPF</a>
+        <a class="nav-link" onclick="showCategory('tonera')">Toner</a>
+        <a class="nav-link" onclick="showCategory('kremra per sy')">Krem per syte</a>
+        <a class="nav-link" onclick="showCategory('maska')">Maska</a>
+    </nav>
+
+    <div class="container">
+       
+        <!-- Kategoria: Lares Fytyre -->
+            <div id ="lares" class="category-products">
+            <h2>Lares Fytyre</h2>
+            <div class="products">
+                <div class="product">
+                    <img src= "pictures/CeraVeFoamingFacialCleanser.webp" >
+                    <div class="product-details">
+                        <h3>CeraVe Foaming Facial Cleanser 355 ml</h3>
+                        <p>Çmimi: 1,800 ALL</p>
+                        <p class="in-stock">Gjendja: In stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>
+                </div>
+                
+                
+                 <div class="product">
+                        <img src="pictures/CeraVe Foaming Facial Cleanser.jpeg">
+                        <div class="product-details">
+                            <h3>CeraVe Foaming Facial Cleanser 236 ml</h3>
+                            <p>Çmimi: 1,190 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <a href="blitani.html">
+                            <button>Bli tani</button></a>
+                        </div>
+                    </div>
+                    
+
+                <div class="product">
+                    <img src="pictures/Ami's Beauty Micelar Milk.webp" >
+                    <div class="product-details">
+                        <h3>Ami's Beauty Micelar Milk 200 ml</h3>
+                        <p>Çmimi: 2,800 ALL</p>
+                        <p class="out-of-stock">Gjendja: Out of stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="pictures/CeraVe Hydrating Facial Cleanser.jpeg" >
+                    <div class="product-details">
+                        <h3>CeraVe Hydrating Facial Cleanser 355 ml</h3>
+                        <p>Çmimi: 2,000 ALL</p>
+                        <p class="in-stock">Gjendja: In stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>
+                </div>
+ 
+                <div class="product">
+                    <img src="pictures/Alpha H Triple Action Cleanser With Thyme.jpeg" >
+                    <div class="product-details">
+                        <h3>Alpha H Triple Action Cleanser With Thyme 200 ml</h3>
+                        <p>Çmimi: 2,999 ALL</p>
+                        <p class="in-stock">Gjendja: In stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="pictures/Chanel Anti Pollution Cleansing Milk.jpeg" >
+                    <div class="product-details">
+                        <h3>Chanel Anti Pollution Cleansing Milk 150 ml</h3>
+                        <p>Çmimi: 3,500 ALL</p>
+                        <p class="in-stock">Gjendja: In stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>
+                </div>
+
+                <div class="product">
+                     <img src="pictures/Chanel Anti Pollution Cleansing Oil.jpeg" >
+                    <div class="product-details">
+                        <h3>Chanel Anti Pollution Cleansing Oil 150 ml</h3>
+                        <p>Çmimi: 4,200 ALL</p>
+                        <p class="out-of-stock">Gjendja: Out of stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <a href="blitani.html">
+                        <button>Bli tani</button></a>
+                    </div>     
+             </div>
+
+             <div class="product">
+                <img src="pictures/Glow Recipe Avocado Ceramide Cleanser.jpeg" >
+               <div class="product-details">
+                   <h3>Glow Recipe Avocado Ceramide Cleanser 150 ml</h3>
+                   <p>Çmimi: 3,000 ALL</p>
+                   <p class="in-stock">Gjendja: In stock</p>
+               </div>
+               <div class="product-actions">
+                   <input type="number" value="1" min="1" max="20">
+                   <button class="add-to-cart">Shto ne shporte</button>
+                   <a href="blitani.html">
+                   <button>Bli tani</button></a>
+               </div>     
+          </div>
+      </div>
+ </div>
+
+
+                <!-- Kategoria: Krem Hidratues-->
+                <div id ="kremra" class="category-products">
+                    <h2>Krem Hidratues</h2>
+                    <div class="products">
+                        <div class="product">
+                            <img src= "pictures/Shiseido Hydrating Cream.jpeg" >
+                            <div class="product-details">
+                                <h3>Shiseido Hydrating Cream 50 ml</h3>
+                                <p>Çmimi: 5,499 ALL </p>
+                                <p class="in-stock">Gjendja: In stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>
+                        </div>
+        
+                            <div class="product">
+                                <img src="pictures/CeraVe Moisturizing Lotion.jpeg">
+                                <div class="product-details">
+                                    <h3>CeraVe Moisturizing Lotion 355 ml</h3>
+                                    <p>Çmimi: 1,799 ALL</p>
+                                    <p class="in-stock">Gjendja: In stock</p>
+                                </div>
+                                <div class="product-actions">
+                                    <input type="number" value="1" min="1" max="20">
+                                    <button class="add-to-cart">Shto ne shporte</button> 
+                                    <button>Bli tani</button>
+                                </div>
+                            </div>
+                            
+        
+                        <div class="product">
+                            <img src="pictures/Chanel Hydration Protection Radiance Very Moist.jpeg" >
+                            <div class="product-details">
+                                <h3>Chanel Hydration Protection Radiance Very Moist 150 ml</h3>
+                                <p>Çmimi: 4,200 ALL</p>
+                                <p class="in-stock">Gjendja: In stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product">
+                            <img src="pictures/Drunk Elephant Bora Barrier Repair Cream.jpeg" >
+                            <div class="product-details">
+                                <h3>Drunk Elephant Bora Barrier Repair Cream 50 ml</h3>
+                                <p>Çmimi: 6,199 ALL</p>
+                                <p class="in-stock">Gjendja: In stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>
+                        </div>
+         
+                        <div class="product">
+                            <img src="pictures/Drunk Elephant Wonderwild Miracle Butter.jpeg">
+                            <div class="product-details">
+                                <h3>Drunk Elephant Wonderwild Miracle Butter 60 ml</h3>
+                                <p>Çmimi: 3,499 ALL</p>
+                                <p class="in-stock">Gjendja: In stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>
+                        </div>
+        
+                        <div class="product">
+                            <img src="pictures/Loreal Midnight Cream.jpeg">
+                            <div class="product-details">
+                                <h3>Loreal Midnight Cream <br>50 ml</h3>
+                                <p>Çmimi: 2,500 ALL</p>
+                                <p class="in-stock">Gjendja: In stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>
+                        </div>
+        
+                        <div class="product">
+                             <img src="pictures/Pixi Vitamin C Lotion Brightening Moisturizer.jpeg">
+                            <div class="product-details">
+                                <h3>Pixi Vitamin C Lotion Brightening Moisturizer 50 ml</h3>
+                                <p>Çmimi: 2,200 ALL</p>
+                                <p class="out-of-stock">Gjendja: Out of stock</p>
+                            </div>
+                            <div class="product-actions">
+                                <input type="number" value="1" min="1" max="20">
+                                <button class="add-to-cart">Shto ne shporte</button>
+                                <button>Bli tani</button>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                
+                        
+   <!-- Kategoria: Serume-->
+   <div id ="serume" class="category-products">
+    <h2>Serume</h2>
+        <div class="products">
+            <div class="product">
+                <img src="pictures/The Ordinary Serum.jpeg">
+                <div class="product-details">
+                    <h3>The Ordinary Niacinamide 10% + Zinc 1% 30 ml</h3>
+                    <p>Çmimi: 1,800 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+            
+                <div class="product">
+                    <img src="pictures/Geek & Gorgeus-C Glow.jpeg">
+                    <div class="product-details">
+                        <h3>Geek & Gorgeus-C Glow <br>30 ml</h3>
+                        <p>Çmimi: 1,500 ALL</p>
+                        <p class="in-stock">Gjendja: In stock</p>
+                    </div>
+                    <div class="product-actions">
+                        <input type="number" value="1" min="1" max="20">
+                        <button class="add-to-cart">Shto ne shporte</button>
+                        <button>Bli tani</button>
+                    </div>
+                </div>
+                
+
+            <div class="product">
+                <img src="pictures/La Roche Posay Pure Vitamin C10.webp" >
+                <div class="product-details">
+                    <h3>La Roche Posay Pure Vitamin C10 30 ml</h3>
+                    <p>Çmimi: 4,500 ALL</p>
+                    <p class="out-of-stock">Gjendja: Out of stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="pictures/La Roche Posay Hyalu B5 Serum.webp" >
+                <div class="product-details">
+                    <h3>La Roche Posay Hyalu B5 Serum 30 ml</h3>
+                    <p>Çmimi: 4,500 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/CeraVe Retinol Serum with Ceramides Blemish Prone.webp" >
+                <div class="product-details">
+                    <h3>CeraVe Retinol Serum<br>,Ceramides BlemishProne30ml</h3>
+                    <p>Çmimi: 2,499 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/Caudalie Vinoperfect Radiance Serum.jpg" >
+                <div class="product-details">
+                    <h3>Caudalie Vinoperfect Radiance Serum 30 ml</h3>
+                    <p>Çmimi: 6,500 ALL</p>
+                    <p class="out-of-stock">Gjendja: Out of stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                 <img src="pictures/Avene Hydrance Boost Serum.webp" >
+                <div class="product-details">
+                    <h3>Avene Hydrance Boost Serum 30 ml</h3>
+                    <p>Çmimi: 2,900 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>     
+         </div>
+
+         <div class="product">
+            <img src="pictures/Tatcha the Dewy Serum.jpeg" >
+            <div class="product-details">
+                <h3>Tatcha the Dewy Serum  <br>30 ml</h3>
+                <p>Çmimi: 8,500 ALL</p>
+                <p class="in-stock">Gjendja: In stock</p>
+            </div>
+            <div class="product-actions">
+                <input type="number" value="1" min="1" max="20">
+                <button class="add-to-cart">Shto ne shporte</button>
+                <button>Bli tani</button>
+            </div>
+        </div>
+
+        <div class="product">
+             <img src="pictures/Pixi Rose Oil Blend.jpeg" >
+            <div class="product-details">
+                <h3>Pixi Rose Oil Blend <br>30 ml</h3>
+                <p>Çmimi: 2,499 ALL</p>
+                <p class="in-stock">Gjendja: In stock</p>
+            </div>
+            <div class="product-actions">
+                <input type="number" value="1" min="1" max="20">
+                <button class="add-to-cart">Shto ne shporte</button>
+                <button>Bli tani</button>
+            </div>     
+        </div>
+
+        <div class="product">
+            <img src="pictures/Pixi Vitamin C CapsuleCare.jpeg" >
+          <div class="product-details">
+            <h3>Pixi Vitamin C CapsuleCare 30 ml</h3>
+            <p>Çmimi: 2,200 ALL</p>
+            <p class="in-stock">Gjendja: In stock</p>
+        </div>
+        <div class="product-actions">
+            <input type="number" value="1" min="1" max="20">
+            <button class="add-to-cart">Shto ne shporte</button>
+            <button>Bli tani</button>
+        </div>     
+      </div>
+
+      <div class="product">
+        <img src="pictures/Drunk Elephant C Firma Fresh Day Serum.jpeg" >
+      <div class="product-details">
+        <h3>Drunk Elephant C Firma Fresh Day Serum 30 ml</h3>
+        <p>Çmimi: 6,499 ALL</p>
+        <p class="in-stock">Gjendja: In stock</p>
+    </div>
+    <div class="product-actions">
+        <input type="number" value="1" min="1" max="20">
+        <button class="add-to-cart">Shto ne shporte</button>
+        <button>Bli tani</button>
+    </div>     
+  </div>
+
+    <div class="product">
+            <img src="pictures/Rilastil Intense C Serum.jpg" >
+           <div class="product-details">
+               <h3>Rilastil Intense C Serum <br>30 ml</h3>
+               <p>Çmimi: 4,500 ALL</p>
+               <p class="in-stock">Gjendja: In stock</p>
+           </div>
+           <div class="product-actions">
+               <input type="number" value="1" min="1" max="20">
+               <button class="add-to-cart">Shto ne shporte</button>
+               <button>Bli tani</button>
+           </div>     
+       </div>
+    </div>
+</div>
+
+        <!-- Kategoria: SPF -->
+        <div id ="spf" class="category-products">
+        <h2>SPF</h2>
+        <div class="products">
+            <div class="product">
+                <img src= "pictures/Missha All Around Safe Block Essence Sun Milk SPF50.jpeg" >
+                <div class="product-details">
+                    <h3>Missha All Around Safe Block Essence Sun Milk SPF50</h3>
+                    <p>Çmimi: 1,499 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/Paulas Choice Youth Extending Daily Hydrating Fluid SPF 50.jpeg">
+                <div class="product-details">
+                    <h3>Paulas Choice Daily Hydrating Fluid SPF 50</h3>
+                    <p>Çmimi: 1,000 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+                
+
+            <div class="product">
+                <img src="pictures/Shiseido Clear Suncare Stick SPF50+.jpeg" >
+                <div class="product-details">
+                    <h3>Shiseido Clear Suncare Stick SPF50+ 20 g</h3>
+                    <p>Çmimi: 3,200 ALL</p>
+                    <p class="out-of-stock">Gjendja: Out of stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="pictures/Alpha H Daily Essential Moisturiser Spf 100ml.jpeg" >
+                <div class="product-details">
+                    <h3>Alpha H Daily Essential Moisturiser Spf 100ml</h3>
+                    <p>Çmimi: 5,499 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/Alpha H Daily Essential Moisturiser Spf 50+.jpeg">
+                <div class="product-details">
+                    <h3>Alpha H Daily Essential Moisturiser Spf 50+ 50 ml</h3>
+                    <p>Çmimi: 3,199 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/La Roche Posay Anthelios Invisible Fluid Spf 50+.jpeg">
+                <div class="product-details">
+                    <h3>La Roche Posay Anthelios Invisible Fluid Spf 50+ 50 ml</h3>
+                    <p>Çmimi: 1,600 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>
+            </div>
+
+            <div class="product">
+                 <img src="pictures/La Roche Posay Anthelios Tinted Fluid Spf 50+.jpeg">
+                <div class="product-details">
+                    <h3>La Roche Posay Anthelios Tinted Fluid Spf 50+ 50 ml</h3>
+                    <p>Çmimi: 2,500 ALL</p>
+                    <p class="in-stock">Gjendja: In stock</p>
+                </div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" max="20">
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <button>Bli tani</button>
+                </div>     
+            </div>
+        </div>
+    </div>
+            
+        <!-- Kategoria: Toner  -->
+        <div id ="tonera" class="category-products">
+        <h2>Toner</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src= "pictures/Alpha H Generation Glow Daily Resurfacing Essence.jpeg" >
+                        <div class="product-details">
+                            <h3>Alpha H Glow Daily Resurfacing Essence 100 ml</h3>
+                            <p>Çmimi: 4,299 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/Alpha H Liquid Gold.jpeg">
+                        <div class="product-details">
+                            <h3>Alpha H Liquid Gold <br>100 ml</h3>
+                            <p>Çmimi: 4,199 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                        
+        
+                    <div class="product">
+                        <img src="pictures/Ami's Beauty Toning Lotion.jpeg" >
+                        <div class="product-details">
+                            <h3>Ami's Beauty Toning <br> Lotion</h3>
+                            <p>Çmimi: 2,800 ALL</p>
+                            <p class="out-of-stock">Gjendja: Out of stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="pictures/Glow Recipe Watermelon Glow Pore Tight Toner.jpeg" >
+                        <div class="product-details">
+                            <h3>Glow Recipe Watermelon Glow Pore Tight Toner 150 ml</h3>
+                            <p>Çmimi: 3,499 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/CeraVe Hydrating Toner.jpeg">
+                        <div class="product-details">
+                            <h3>CeraVe Hydrating Toner 200 ml</h3>
+                            <p>Çmimi: 2,499 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/Pixi Glow Tonic.jpeg">
+                        <div class="product-details">
+                            <h3>Pixi Glow Tonic <br>250 ml</h3>
+                            <p>Çmimi: 2,600 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                         <img src="pictures/Cosrx Cantella Water Alcohol Free Toner.jpeg">
+                        <div class="product-details">
+                            <h3>Cosrx Cantella Water Alcohol Free Toner 150 ml</h3>
+                            <p>Çmimi: 1,500 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>     
+                    </div>
+                </div>
+        </div>
+           
+        <!-- Kategoria: Krem per syte -->
+        <div id ="kremra per sy" class="category-products">
+            <h2>Lares Fytyre</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src= "pictures/CeraVe Eye Repair Cream.webp" >
+                        <div class="product-details">
+                            <h3>CeraVe Eye Repair Cream 14.2 g</h3>
+                            <p>Çmimi: 1,899 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/CeraVe Skin Renewing Eye Cream.jpeg">
+                        <div class="product-details">
+                            <h3>CeraVe Skin Renewing Eye Cream 14.2 g</h3>
+                            <p>Çmimi: 1,599 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                        
+        
+                    <div class="product">
+                        <img src="pictures/Cetaphil Hydrating Eye Cream.jpeg" >
+                        <div class="product-details">
+                            <h3>Cetaphil Hydrating Eye Cream 14 ml</h3>
+                            <p>Çmimi: 1,200 ALL</p>
+                            <p class="out-of-stock">Gjendja: Out of stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="pictures/Shiseido Anti Aging Eye Cream.jpeg" >
+                        <div class="product-details">
+                            <h3>Shiseido Anti Aging Eye Cream 15 ml</h3>
+                            <p>Çmimi: 8,499 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/Alpha H Absolute Eye Complex.jpeg">
+                        <div class="product-details">
+                            <h3>Alpha H Absolute Eye Complex 15 ml</h3>
+                            <p>Çmimi: 4,299 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/Neutrogena Retinol Eye Cream.jpeg">
+                        <div class="product-details">
+                            <h3>Neutrogena Retinol Eye Cream 15 ml</h3>
+                            <p>Çmimi: 2,000 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                         <img src="pictures/Cosrx Cantella Water Alcohol Free Toner.jpeg">
+                        <div class="product-details">
+                            <h3>Cosrx Cantella Water Alcohol Free Toner 150 ml</h3>
+                            <p>Çmimi: 1,500 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Kategoria: Maska -->
+            <div id ="maska" class="category-products">
+            <h2>Maska</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src= "pictures/Drunk Elephant Bouncy Brightfacial.jpeg" >
+                        <div class="product-details">
+                            <h3>Drunk Elephant Bouncy Brightfacial 50 ml</h3>
+                            <p>Çmimi: 6,499 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+                    <div class="product">
+                        <img src="pictures/Avant Vitamin C Hydro-Lock Night Reset Mask.jpeg">
+                        <div class="product-details">
+                            <h3>Avant Vitamin C Hydro-Lock Night Reset Mask 50 ml</h3>
+                            <p>Çmimi: 2,599 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                        
+        
+                    <div class="product">
+                        <img src="pictures/Ami's Beauty Face Mask.jpeg" >
+                        <div class="product-details">
+                            <h3>Ami's Beauty Face<br> Mask</h3>
+                            <p>Çmimi: 3,500 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="pictures/Ami's Beauty Face Scrub.jpeg" >
+                        <div class="product-details">
+                            <h3>Ami's Beauty Face<br> Scrub</h3>
+                            <p>Çmimi: 2,999 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="pictures/Pixi Skin Treats Volume Mask.jpeg">
+                        <div class="product-details">
+                            <h3>Pixi Skin Treats Volume <br>Mask</h3>
+                            <p>Çmimi: 1,200 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                        
+        
+                    <div class="product">
+                        <img src="pictures/Tatcha The Clarifying Clay Mask.jpeg" >
+                        <div class="product-details">
+                            <h3>Tatcha The Clarifying Clay Mask 50 ml</h3>
+                            <p>Çmimi: 6,500 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="pictures/Skin Republic Collagen Hydrogel Mask.jpeg" >
+                        <div class="product-details">
+                            <h3>Skin Republic Collagen Hydrogel Mask</h3>
+                            <p>Çmimi: 200 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="pictures/Missha Sheet Mask Madecassoside.jpeg" >
+                        <div class="product-details">
+                            <h3>Missha Sheet Mask Madecassoside</h3>
+                            <p>Çmimi: 399 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                        </div>
+                    </div>
+        
+        
+                    <div class="product">
+                        <img src="pictures/Laneige Berry Lip Sleeping Mask.jpeg">
+                        <div class="product-details">
+                            <h3>Laneige Berry Lip Sleeping Mask</h3>
+                            <p>Çmimi: 2,499 ALL</p>
+                            <p class="in-stock">Gjendja: In stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" value="1" min="1" max="20">
+                            <button class="add-to-cart">Shto ne shporte</button>
+                            <button>Bli tani</button>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        
+
+    <script>
+        
+        //Funksion per pjesen e search bar
+        function searchProducts() {
+            const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                const productName = product.querySelector('h3').textContent.toLowerCase();
+                if (productName.includes(searchQuery)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+        //Funksion per shfaqjen dhe mbylljen e kategorive kur klikon navigatorin
+        function showCategory(categoryId) {
+            const categories = document.querySelectorAll('.category-products');
+            categories.forEach(category => {
+                category.style.display = 'none';
+            });
+            document.getElementById(categoryId).style.display = 'block';
+        }
+
+       
+    //Funksion per "add-to-cart"b
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Produkti u shtua në shportë!');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+   

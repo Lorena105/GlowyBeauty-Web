@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Makeup </title>
+     <link rel="stylesheet" href="Projektii.css">
+</head>
+<body>
+   
+        <img src="imazhet/backgroundd.jpg"alt="makeup" style="width: 100%; height: 300px;">
+
+    
+    <header>
+        <p> <span style="font-size: 35px; font-weight: bold;"> Make up</span> <br>Glowy Beauty ofron per ju 3 nga brandet me te njohura dhe me cilesore te make up-eve. NARS,Fenty beauty dhe Dior,<br>   vijne tek ju me cmimet me te lira
+            dhe produktet me te mira</p>
+          
+    </header>
+    <div id="search-container">
+        <input type="text" id="product-search" placeholder="Kërko produktin..." oninput="searchProducts()">
+    </div>
+    
+   
+    <div id="unavailable-message" class="unavailable-message">
+        <p>Produkt i pa disponueshëm!</p>
+    </div>
+    
+
+    <!-- Navigation -->
+    <div class="categories">
+        <a href="#" onclick="showCategory('foundation')">Foundation</a>
+        <a href="#" onclick="showCategory('concealer')">Concealer</a>
+        <a href="#" onclick="showCategory('blush')">Blush</a>
+        <a href="#" onclick="showCategory('highlighter')">Highlighter</a>
+        <a href="#" onclick="showCategory('brows')">Brows</a>
+        <a href="#" onclick="showCategory('eyes')">Eyes</a>
+        <a href="#" onclick="showCategory('lips')">Lips</a>
+        <a href="#" onclick="showCategory('advent-calendar')">Advent Calendar</a>
+        <a href="#" onclick="showCategory('mbyll kategorite')">Mbyll kategorite</a>
+    </div>
+
+    </div>
+   
+    <div class="main-content">
+        <div id="eyes" class="product-details">
+          
+            <div class="product">
+                <div class="product-img">
+                    <img id="product-img-1" src="imazhet\QuadEyeShadow_Mojave1.avif" alt="Lip Product Red">
+                </div>
+                <div class="product-info">
+                    <h2> NARS Eyeshadow </h2>
+                    <p>Price: 28.00 ALL</p>
+                    
+                    <!-- Radio buttons për ngjyrën -->
+                    <label for="eye-color-1">Choose Color:</label>
+                    <div class="color-selector">
+                        <input type="radio" id="color-red-1" name="color-1" value="red" onchange="changeEyeColor(1, 'red')">
+                        <label for="color-red-1" class="color-circle red"></label>
+        
+                        <input type="radio" id="color-pink-1" name="color-1" value="pink" onchange="changeEyeColor(1, 'pink')">
+                        <label for="color-pink-1" class="color-circle pink"></label>
+        
+                        <input type="radio" id="color-brown-1" name="color-1" value="brown" onchange="changeEyeColor(1, 'brown')">
+                        <label for="color-brown-1" class="color-circle brown"></label>
+    
+                        <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeEyeColor(2, 'purple')">
+                        <label for="color- purple-2" class="color-circle  purple"></label>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="product">
+                <div class="product-img">
+                    <img id="product-img-2" src="imazhet\1eyeshadow.webp" alt="Fenty Beauty Eyeshadow">
+                </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty Eyeshadow</h2>
+                    <p>Price: 25.00 ALL</p>
+                    
+                    <!-- Radio buttons për ngjyrën -->
+                    <label for="lip-color-2">Choose Color:</label>
+                    <div class="color-selector">
+                        <input type="radio" id="color-red-2" name="color-2" value="red" onchange="changeEyeColor(2, 'red')">
+                        <label for="color-red-2" class="color-circle red"></label>
+    
+                        <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeEyeColor(2, 'purple')">
+                        <label for="color- purple-2" class="color-circle  purple"></label>
+        
+                        <input type="radio" id="color-pink-2" name="color-2" value="pink" onchange="changeEyeColor(2, 'pink')">
+                        <label for="color-pink-2" class="color-circle pink"></label>
+        
+                        <input type="radio" id="color-brown-2" name="color-2" value="brown" onchange="changeEyeColor(2, 'brown')">
+                        <label for="color-brown-2" class="color-circle brown"></label>
+                    </div>
+                </div>
+            </div>
+                
+            
+            <div class="product">
+                    <div class="product-img">
+                        <img id="product-img-2" src="imazhet\2eyepalette.jpg" alt="Dior eyeshadow">
+                    </div>
+                    
+                    <div class="product-info">
+                        <h2>Dior Eyeshadow</h2>
+                        <p>Price: 28.00 ALL</p>
+                        
+                        <!-- Radio buttons për ngjyrën -->
+                        <label for="lip-color-2">Choose Color:</label>
+                        <div class="color-selector">
+                            <input type="radio" id="color-red-2" name="color-2" value="red" onchange="changeEyeColor(2, 'red')">
+                            <label for="color-red-2" class="color-circle red"></label>
+        
+                            <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeEyeColor(2, 'purple')">
+                            <label for="color- purple-2" class="color-circle  purple"></label>
+            
+                            <input type="radio" id="color-pink-2" name="color-2" value="pink" onchange="changeEyeColor(2, 'pink')">
+                            <label for="color-pink-2" class="color-circle pink"></label>
+            
+                            <input type="radio" id="color-brown-2" name="color-2" value="brown" onchange="changeEyeColor(2, 'brown')">
+                            <label for="color-brown-2" class="color-circle brown"></label>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <d id="lips" class="product-details">
+            <div class="product">
+                <div class="product-img">
+                    <img id="product-img-1" src="imazhet\lips1.avif" alt="Lip Product Red">
+                </div>
+                <div class="product-info">
+                    <h2> NARS Lipstick </h2>
+                    <p>Price: 28.00 ALL</p>
+                    
+                    <!-- Radio buttons për ngjyrën e buzëkuqit -->
+                    <label for="lip-color-1">Choose Color:</label>
+                    <div class="color-selector">
+                        <input type="radio" id="color-red-1" name="color-1" value="red" onchange="changeLipColor(1, 'red')">
+                        <label for="color-red-1" class="color-circle red"></label>
+        
+                        <input type="radio" id="color-pink-1" name="color-1" value="pink" onchange="changeLipColor(1, 'pink')">
+                        <label for="color-pink-1" class="color-circle pink"></label>
+        
+                        <input type="radio" id="color-brown-1" name="color-1" value="brown" onchange="changeLipColor(1, 'brown')">
+                        <label for="color-brown-1" class="color-circle brown"></label>
+    
+                        <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeLipColor(2, 'purple')">
+                        <label for="color- purple-2" class="color-circle  purple"></label>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="product">
+                <div class="product-img">
+                    <img id="product-img-2" src="imazhet\2fentylips.webp" alt="Lip Product Red">
+                </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty Lipstick</h2>
+                    <p>Price: 25.00 ALL</p>
+                    
+                    <!-- Radio buttons për ngjyrën e buzëkuqit -->
+                    <label for="lip-color-2">Choose Color:</label>
+                    <div class="color-selector">
+                        <input type="radio" id="color-red-2" name="color-2" value="red" onchange="changeLipColor(2, 'red')">
+                        <label for="color-red-2" class="color-circle red"></label>
+    
+                        <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeLipColor(2, 'purple')">
+                        <label for="color- purple-2" class="color-circle  purple"></label>
+        
+                        <input type="radio" id="color-pink-2" name="color-2" value="pink" onchange="changeLipColor(2, 'pink')">
+                        <label for="color-pink-2" class="color-circle pink"></label>
+        
+                        <input type="radio" id="color-brown-2" name="color-2" value="brown" onchange="changeLipColor(2, 'brown')">
+                        <label for="color-brown-2" class="color-circle brown"></label>
+                    </div>
+                </div>
+            </div>
+                <div class="product">
+                    <div class="product-img">
+                        <img id="product-img-2" src="imazhet\3lipsdior.webp" alt="Lip Product Red">
+                    </div>
+                    <div class="product-info">
+                        <h2>Dior Lipstick</h2>
+                        <p>Price: 28.00 ALL</p>
+                        
+                        <!-- Radio buttons për ngjyrën e buzëkuqit -->
+                        <label for="lip-color-2">Choose Color:</label>
+                        <div class="color-selector">
+                            <input type="radio" id="color-red-2" name="color-2" value="red" onchange="changeLipColor(2, 'red')">
+                            <label for="color-red-2" class="color-circle red"></label>
+        
+                            <input type="radio" id="color- purple" name="color-2" value=" purple" onchange="changeLipColor(2, 'purple')">
+                            <label for="color- purple-2" class="color-circle  purple"></label>
+            
+                            <input type="radio" id="color-pink-2" name="color-2" value="pink" onchange="changeLipColor(2, 'pink')">
+                            <label for="color-pink-2" class="color-circle pink"></label>
+            
+                            <input type="radio" id="color-brown-2" name="color-2" value="brown" onchange="changeLipColor(2, 'brown')">
+                            <label for="color-brown-2" class="color-circle brown"></label>
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+            <div id="foundation" class="product-details">
+                <div class="product-img">
+                    <img id="product-image-foundation" src="imazhet\1foundation.jpg" alt="NARS Foundation">
+                </div>
+                <div class="product-info">
+                    <h2>NARS Natural Radiant Longwear Foundation</h2>
+                    <p class="cmimi">40.00 ALL</p>
+    
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-foundation" onchange="changeShade('foundation')">
+                            <option value="barcelona" data-img="imazhet\2foundation.avif">Barcelona (Medium, Neutral Undertones)</option>
+                            <option value="fiji" data-img="imazhet\3foundation.png">Fiji (Light with Yellow Undertones)</option>
+                            <option value="montblanc" data-img="imazhet\4foundation.jpg">Montblanc (Light with Pink Undertones)</option>
+                            <option value="santa fe" data-img="imazhet\5foundation.avif">Santa Fe (Medium, Pink Undertones)</option>
+                        </select>
+                    </div>
+                        <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-foundation" src="imazhet\1fenty.jpg" alt="Fenty Beauty foundation">
+            </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty foundation</h2>
+                    <p class="cmimi">42.00 ALL</p>
+            
+                    <div class="shade-selector">
+                    <label for="shade">Choose Shade:</label>
+                    <select id="shade-foundation" onchange="changeShade('foundation')">
+                        <option value="140 - Light With Warm Yellow Undertones" data-img="imazhet\2fenty.jpg">140 - Light With Warm Yellow Undertones</option>
+                        <option value="160 - Light With Warm Peach Undertones" data-img="imazhet\2fenty.jpg">160 - Light With Warm Peach Undertones</option>
+                        <option value="170 - Light With Cool Pink Undertones" data-img="imazhet\2fenty.jpg">170 - Light With Cool Pink Undertones</option>
+                        <option value="185 - Light Medium With Neutral Undertone" data-img="imazhet\2fenty.jpg">185 - Light Medium With Neutral Undertone</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+            
+            <div class="product-img">
+                <img id="product-image-foundation" src="imazhet\1dior.jpg" alt="DIOR foundation">
+            </div>
+            <div class="product-info">
+                <h2>DIOR foundation</h2>
+                <p class="cmimi">48.00 ALL</p>
+        
+                <div class="shade-selector">
+                <label for="shade">Choose Shade:</label>
+                <select id="shade-foundation" onchange="changeShade('foundation')">
+                    <option value="2N" data-img="imazhet\1dior.jpg">2N</option>
+                    <option value="0N" data-img="imazhet\1dior.jpg">0N</option>
+                    <option value="1N" data-img="imazhet\1dior.jpg">1N</option>
+                    <option value="2.5W" data-img="imazhet\1dior.jpg">2.5W</option>
+                    </select>
+                </div>
+                <button class="add-to-cart">Shto ne shporte</button>
+                <p><strong>Status:</strong> Available</p>
+            </div>
+        </div>
+            </div>
+    
+    
+           
+            <div id="concealer" class="product-details">
+                <div class="product-img">
+                    <img id="product-image-concealer" src="imazhet\1nars.jpg" alt="NARS concealer">
+                </div>
+                <div class="product-info">
+                    <h2>NARS Concealer</h2>
+                    <p class="cmimi">30.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-concealer" onchange="changeShade('concealer')">
+                            <option value="honey" data-img="imazhet\2nars.jpg">Honey (Light to medium with cool undertones)</option>
+                            <option value="vanilla" data-img="imazhet\3nars.jpg">Vanilla (Very light with neutral undertones)</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-concealer" src="imazhet\1.1fenty.jpeg" alt="Fenty Beauty concealer">
+                </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty concealer</h2>
+                    <p class="cmimi">35.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-concealer" onchange="changeShade('concealer')">
+                            <option value="Light Medium 200C" data-img="imazhet\1.1fenty.jpeg">Light Medium 200C</option>
+                            <option value="Light 175W" data-img="imazhet\1.1fenty.jpeg">Light 175W</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-concealer" src="imazhet\1.1dior.avif" alt="Dior concealer">
+                </div>
+                <div class="product-info">
+                    <h2>Dior concealer</h2>
+                    <p class="cmimi">38.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-concealer" onchange="changeShade('concealer')">
+                            <option value="2N" data-img="imazhet\1.1dior.avif">2N</option>
+                            <option value="3.5W" data-img="imazhet\1.1dior.avif">3.5W</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                </div>
+                
+        
+
+            <div id="blush" class="product-details">
+                <div class="product-img">
+                    <img id="product-image-blush" src="imazhet\1blush.webp" alt="NARS blush">
+                </div>
+                <div class="product-info">
+                    <h2>NARS blush</h2>
+                    <p class="cmimi">35.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-blush" onchange="changeShade('blush')">
+                            <option value="pink" data-img="imazhet\2blush.webp">pink</option>
+                            <option value="berry" data-img="imazhet\3blush.jpg">berry </option>
+                            <option value="coral" data-img="imazhet\4blush.jpg">coral </option>
+                            <option value="red" data-img="imazhet\5blush.webp">red</option>
+                            <option value="brown" data-img="imazhet\6blush.jpg">brown </option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-blush" src="imazhet\1bfenty.jpg" alt="Fenty Beauty blush">
+                </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty blush</h2>
+                    <p class="cmimi">32.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-blush" onchange="changeShade('blush')">
+                            <option value="PETAL POPPIN" data-img="imazhet\1bfenty.jpg">PETAL POPPIN'</option>
+                            <option value="STRAWBERRY DRIP" data-img="imazhet\1bfenty.jpg">STRAWBERRY DRIP </option>
+                            <option value="ROSE LATTE" data-img="imazhet\1bfenty.jpg">ROSE LATTE </option>
+                            <option value="CRUSH ON CUPID" data-img="imazhet\1bfenty.jpg">CRUSH ON CUPID</option>
+                            <option value="Raisin Standardz" data-img="imazhet\1bfenty.jpg">Raisin Standardz </option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-blush" src="imazhet\1bdior.webp" alt="Dior blush">
+                </div>
+                <div class="product-info">
+                    <h2>Dior blush</h2>
+                    <p class="cmimi">32.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-blush" onchange="changeShade('blush')">
+                            <option value="001 Pink" data-img="imazhet\1bdior.webp">001 Pink</option>
+                            <option value="004 Coral" data-img="imazhet\1bdior.webp">004 Coral</option>
+                            <option value="020 Mahogany" data-img="imazhet\1bdior.webp">020 Mahogany</option>
+                            <option value="015 Cherry" data-img="imazhet\1bdior.webp">015 Cherry</option>
+                            <option value="012 Rosewood" data-img="imazhet\1bdior.webp ">012 Rosewood </option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+            </div>
+            
+            <div id="highlighter" class="product-details">
+                <div class="product-img">
+                    <img id="product-image-highlighter" src="imazhet\1h.jpg" alt="NARS stick highlighter">
+                </div>
+                <div class="product-info">
+                    <h2>NARS highlighter</h2>
+                    <p class="cmimi">29.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-highlighter" onchange="changeShade('highlighter')">
+                            <option value="south beach" data-img="imazhet\2h.webp">south beach(Light, Shimmering Apricot)</option>
+                            <option value="Copacabana " data-img="imazhet\3h.webp">Copacabana(Opalescent Pink Pearl Highlight)</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-highlighter" src="imazhet\1hfenty.avif" alt="Fenty Beautystick highlighter">
+                </div>
+                <div class="product-info">
+                    <h2>Fenty Beauty highlighter</h2>
+                    <p class="cmimi">27.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-highlighter" onchange="changeShade('highlighter')">
+                            <option value="pure platinum sparkle" data-img="imazhet\1hfenty.avif">pure platinum sparkle</option>
+                            <option value=" pure pink & gold sparkle " data-img="imazhet\1hfenty.avif"> pure pink & gold sparkle</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                <div class="product-img">
+                    <img id="product-image-highlighter" src="imazhet\1hdior.png" alt="Dior highlighter">
+                </div>
+                <div class="product-info">
+                    <h2>Dior highlighter</h2>
+                    <p class="cmimi">29.00 ALL</p>
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-highlighter" onchange="changeShade('highlighter')">
+                            <option value="pink glow" data-img="imazhet\1hdior.png">pink glow</option>
+                            <option value=" gold glow" data-img="imazhet\1hdior.png">  gold glow</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Shto ne shporte</button>
+                    <p><strong>Status:</strong> Available</p>
+                </div>
+                </div>
+            <div id="brows" class="product-details">
+                <div class="product-img">
+                    <img id="product-image-brows" src="imazhet\1brows.jpg" alt="NARS brows pen">
+                </div>
+                <div class="product-info">
+                    <h2>NARS brows pen</h2>
+                    <p class="cmimi">19.00 ALL</p>
+        
+                    <div class="shade-selector">
+                        <label for="shade">Choose Shade:</label>
+                        <select id="shade-brows" onchange="changeShade('brows')">
+                            <option value="Biondo" data-img="imazhet\2brows.avif">Goma(Biondo-Freddo)</option>
+                            <option value="Makassar" data-img="imazhet\3brows.avif">Makassar(Marrone ramato-Freddo)</option>
+                            <option value="Lava" data-img="imazhet\4brows.avif">Lava(Marrone scuro-Caldo) </option>
+                            <option value="Atacama" data-img="imazhet\5brows.avif">Atacama(Marrone scuro-Freddo)</option>
+                    </select>
+                    </div>
+                </div>
+                    <div class="product-img">
+                        <img id="product-image-brows" src="imazhet\1browsf.webp" alt="Fenty Beauty brows pen">
+                    </div>
+                    <div class="product-info">
+                        <h2>Fenty Beauty brows pen</h2>
+                        <p class="cmimi">23.00 ALL</p>
+            
+                        <div class="shade-selector">
+                            <label for="shade">Choose Shade:</label>
+                            <select id="shade-brows" onchange="changeShade('brows')">
+                                <option value="black-brown" data-img="imazhet\1browsf.webp">black-brown</option>
+                                <option value="soft black" data-img="imazhet\1browsf.webp">soft black</option>
+                                </select>
+                        </div>
+                    </div>
+                        <div class="product-img">
+                            <img id="product-image-brows" src="imazhet\1browsd.jpg" alt="Dior brows pen">
+                        </div>
+                        <div class="product-info">
+                            <h2>Dior brows pen</h2>
+                            <p class="cmimi">27.00 ALL</p>
+                
+                            <div class="shade-selector">
+                                <label for="shade">Choose Shade:</label>
+                                <select id="shade-brows" onchange="changeShade('brows')">
+                                    <option value="black-brown" data-img="imazhet\1browsd.jpg">black-brown</option>
+                                    <option value="soft black" data-img="imazhet\1browsd.jpg">soft black</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                    
+
+      <!--  Advent Calendar -->
+      <div id="advent-calendar" class="product-details" >
+        <div class="product-img">
+            <img src="imazhet/1advent.jpg" alt="NARS advent calendar">
+        </div>
+        <div class="product-info">
+            <h2>Nars Advent calendar</h2>
+            <p>175.00 ALL</p>
+            <button class="add-to-cart">Shto ne shporte</button>
+            <p><strong>Status:</strong> Available</p>
+        </div>
+        <div class="product-img">
+            <img src="imazhet/2advent.webp" alt="Fenty Beauty Advent calendar">
+        </div>
+        <div class="product-info">
+            <h2>Fenty Beauty Advent calendar</h2>
+            <p>180.00 ALL</p>
+            <button class="add-to-cart">Shto ne shporte</button>
+            <p><strong>Status:</strong> Available</p>
+        </div>
+        <div class="product-img">
+            <img src="imazhet/3advent.png" alt="Dior Advent calendar">
+        </div>
+        <div class="product-info">
+            <h2>Dior Advent calendar</h2>
+            <p>350.00 ALL</p>
+            <button class="add-to-cart">Shto ne shporte</button>
+            <p><strong>Status:</strong> Available</p>
+        </div>
+    </div>
+    
+        <script>
+             function searchProducts() {
+        const searchInput = document.getElementById('product-search').value.toLowerCase();
+        const products = document.querySelectorAll('.product-details');
+        let found = false; 
+       
+        products.forEach(product => {
+            const productName = product.querySelector('h2').textContent.toLowerCase();
+
+            if (productName.includes(searchInput)) {
+                product.style.display = 'block'; 
+                found = true;
+            } else {
+                product.style.display = 'none'; 
+            }
+        });
+
+        
+        if (!found && searchInput !== '') {
+            document.getElementById('unavailable-message').style.display = 'block';
+        } else {
+            document.getElementById('unavailable-message').style.display = 'none';
+        }
+    }
+        function showCategory(category) {
+        
+        var categories = document.querySelectorAll('.product-details');
+        categories.forEach(function(cat) {
+            cat.style.display = 'none';
+        });
+    
+        
+        var selectedCategory = document.getElementById(category);
+        if (selectedCategory) {
+            selectedCategory.style.display = 'flex'; 
+        
+    
+            
+            selectedCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+     
+            function changeShade(category) {
+                var select = document.getElementById('shade-' + category);
+                var selectedOption = select.options[select.selectedIndex];
+                var imageUrl = selectedOption.getAttribute('data-img');  
+    
+                var productImageId = 'product-image-' + category;
+                document.getElementById(productImageId).src = imageUrl;  
+            }
+        
+        </script>
+    
+    
+    
+    </body>
+    </html>

@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(111, 66, 140); /* Dark lavender background */
+}
+
+/* Header */
+header {
+    position: relative;
+    width: 100%;  /* Fotoja mbulon gjithë gjerësinë */
+    height: 400px;  /* Përcaktojmë një lartësi për header-in */
+    overflow: hidden;  /* Sigurojmë që të mos ketë ndonjë mbivendosje të imazhit */
+}
+
+/* Fotoja që shtrihet në të gjithë gjerësinë */
+.product-img img {
+    width: 100%; /* Fotoja mbulon të gjithë gjerësinë */
+    height: 100%; /* Fotoja mbulon gjithashtu lartësinë */
+    object-fit: cover; /* Fotoja mbulon të gjithë hapësirën pa distorsion */
+}
+
+/* Përmbajtja mbi imazh */
+header .header-content {
+    position: absolute;
+    top: 30%; /* Pozicionohet më lartë për të qenë mbi imazh */
+    left: 50%; /* Pozicionohet në qendër horizontalisht */
+    transform: translateX(-50%); /* Përqendron përmbajtjen në mënyrë të saktë */
+    width: 100%;
+    text-align: center;
+    color: rgb(111, 66, 140); /* Ngjyra e shkrimit */
+    z-index: 10; /* Sigurojmë që shkrimi të jetë mbi imazh */
+}
+
+/* Stilizimi i titullit dhe përshkrimit të header-it */
+header .header-content h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header .header-content p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Horizontal Categories Navigation */
+.categories {
+    width: 100%;
+    background-color: #f7f3f3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(6, 6, 6, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Links in categories */
+.categories a {
+    text-decoration: none;
+    color: rgb(111, 66, 140);
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+/* Hover effect for category links */
+.categories a:hover {
+    color: white;
+    background-color: rgb(111, 66, 140);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(111, 66, 140);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Main content area */
+.main-content {
+    padding: 20px;
+    margin-top: 60px; /* Add space for the top navigation */
+}

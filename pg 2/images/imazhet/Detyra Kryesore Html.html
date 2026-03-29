@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kujdesi ndaj Trupit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+       
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        
+        .product-section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .product-category {
+            margin-bottom: 30px;
+        }
+
+        .product-category h2 {
+            color: #5e5e5e;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 180px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .product-item .price {
+            font-weight: bold;
+            color: black;
+        }
+        .in-stock {
+            color: rgb(255, 192, 224);
+        }
+       .out-of-stock {
+            color: red;
+        }
+        .product-item .status {
+            color: red;
+        }
+
+        product-section {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .add-to-cart {
+            background-color: #cda6d7;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .add-to-cart:hover {
+            background-color: #ac7cb3;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #cea6d7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<img src="fotoehederit.jpg" alt="Foto Header" style="width: 100%;">
+<header>
+    <h1> Kujdesi ndaj Trupit</h1>
+    <p>Ketu mund te gjeni produktet me te mira dhe cilesore për bukurine dhe kujdesin trupor</p>
+    
+</header>
+<nav>
+    <a href="#body-cream">Body Cream</a>
+    <a href="#body-shampoo">Body Shampoo</a>
+    <a href="#shower-gel">Shower Gel</a>
+    <a href="#body-spray">Body Spray</a>
+    <a href="#sets">Sete</a>
+</nav>
+
+
+
+
+<div class="product-section" id="body-cream">
+    <div class="product-category">
+        <h2>Body Cream</h2>
+        <div class="product-list">
+            
+            
+            <div class="product-item">
+                <img src="3W Clinic Snail Hand Cream.jpg" alt="Body Cream Image">
+                <h3>Clinic Snail Hand Cream</h3>
+                <p class="price"> Cmimi: 800 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Compania Delle Indie Moisturizing Fluid Cream 11 250ml.jpg" alt="Body Cream Image">
+                <h3> Compania Delle Indie Moisturizing Fluid Cream 11 250ml</h3>
+                <p class="price"> Cmimi:1.300 ALL</p>
+                <p class="status">Gjendja: Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Compania Delle Indie Moisturizing Fluid Cream 21 250ml.jpg" alt="Body Cream Image">
+                <h3> Compania Delle Indie Moisturizing Fluid Cream 21 250ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+
+            <div class="product-item">
+                <img src="Dr Hauschka Rose Nurturing Body Cream 145 ml.jpg" alt="Body Cream Image">
+                <h3>Dr Hauschka Rose Nurturing Body Cream 145 ml</h3>
+                <p class="price">Cmimi:1.200 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Fenty Skin Butta Drop Whipped Oil Body Cream 200ml.jpg" alt="Body Cream Image">
+                <h3>Fenty Skin Butta Drop Whipped Oil Body Cream 200ml</h3>
+                <p class="price">Cmimi:3.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Fenty Skin Butta Drop Whipped Oil Body Cream 500ml Pa Kuti.jpg" alt="Body Cream Image">
+                <h3>Fenty Skin Butta Drop Whipped Oil Body Cream 500ml</h3>
+                <p class="price">Cmimi:7.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Grown Alchemist Body Cream 120 ml.jpg" alt="Body Cream Image">
+                <h3>Grown Alchemist Body Cream 120 ml</h3>
+                <p class="price">Cmimi:2.500 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Olehenriksen Beam Cream Smoothing Body Moisturizer 190 ml.jpg" alt="Body Cream Image">
+                <h3>Olehenriksen Beam Cream Smoothing Body Moisturizer 190 ml</h3>
+                <p class="price">Cmimi:1.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Eucerin Soft Body Cream 450ml .jpg" alt="Body Cream Image">
+                <h3>Eucerin Soft Body Cream 450ml .jpg</h3>
+                <p class="price">Cmimi:1.700 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sundae Body Whip Just Peachy Cream.jpg" alt="Body Cream Image">
+                <h3>Sundae Body Whip Just Peachy Cream</h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sundae Body Whip Watermelon Whirl Cream.jpg" alt="Body Cream Image">
+                <h3>Sundae Body Whip Watermelon Whirl Cream</h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Bom Dia Bright Cream 75ml.jpg" alt="Body Cream Image">
+                <h3>Sol De Janeiro Bom Dia Bright Cream 75ml</h3>
+                <p class="price">Cmimi:2.200 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Beija Flor Elasti-Cream 75ml.jpg" alt="Body Cream Image">
+                <h3>Sol De Janeiro Beija Flor Elasti-Cream 75ml</h3>
+                <p class="price">Cmimi:2.200ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Bom Dia Bright Cream 240ml .jpg" alt="Body Cream Image">
+                <h3>Sol De Janeiro Bom Dia Bright Cream 240ml</h3>
+                <p class="price">Cmimi:3.500ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Brazilian Bum Bum Cream 150ml.jpg" alt="Body Cream Image">
+                <h3>Sol De Janeiro Brazilian Bum Bum Cream 150ml</h3>
+                <p class="price">Cmimi:2.800ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Brazilian Bum Bum Cream 240ml.jpg" alt="Body Cream Image">
+                <h3>Sol De Janeiro Brazilian Bum Bum Cream 240ml</h3>
+                <p class="price">Cmimi:3.500ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<div class="product-section" id="body-shampoo">
+    <div class="product-category">
+        <h2>Body Shampoo</h2>
+        <div class="product-list">
+            
+            <div class="product-item">
+                <img src="Space Nk Caribbean Shores Body Wash 500ml.jpg" alt="Body Shampoo Image">
+                <h3>Space Nk Caribbean Shores Body Wash 500ml</h3>
+                <p class="price">Cmimi:1.400 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Space Nk Caribbean Shores Body Lotion 500ml.jpg" alt="Body Shampoo Image">
+                <h3>Space Nk Caribbean Shores Body Lotion 500ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Ren Moroccan Rose Otto Body Lotion 200ml .jpg" alt="Body Shampoo Image">
+                <h3>Ren Moroccan Rose Otto Body Lotion 200ml</h3>
+                <p class="price">Cmimi:1.100 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Neom Real Luxury Hand And Body Wash 300 ml.jpg" alt="Body Shampoo Image">
+                <h3>Neom Real Luxury Hand And Body Wash 300 ml</h3>
+                <p class="price">Cmimi:1.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Neom Great Day Hand And Body Lotion 300 ml.jpg" alt="Body Shampoo Image">
+                <h3>Neom Great Day Hand And Body Lotion 300 ml</h3>
+                <p class="price">Cmimi:1.200 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Necessaire The Body Wash 250 ml.jpg" alt="Body Shampoo Image">
+                <h3>Necessaire The Body Wash 250 ml</h3>
+                <p class="price">Cmimi:1.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Joonbyrd Little Love Body Lotion .jpg" alt="Body Shampoo Image">
+                <h3>Joonbyrd Little Love Body Lotion</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Ermanno Scervino Satin Body Lotion Tuscan Emotion 200 ml .jpg" alt="Body Shampoo Image">
+                <h3>Ermanno Scervino Satin Body Lotion Tuscan Emotion 200 ml</h3>
+                <p class="price">Cmimi:1.800 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Coco & Eve Super Hydrating Shampoo 250ml .jpg" alt="Body Shampoo Image">
+                <h3>Coco & Eve Super Hydrating Shampoo 250ml</h3>
+                <p class="price">Cmimi:1.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Joonbyrd Moon Swim Body Wash.jpg" alt="Body Shampoo Image">
+                <h3>Joonbyrd Moon Swim Body Wash</h3>
+                <p class="price">Cmimi:1.200 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Elemis Embrace Bath And Shower Elixir 100ml.jpg" alt="Body Shampoo Image">
+                <h3>Elemis Embrace Bath And Shower Elixir 100ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="B Silent Night Time Bath Concentrate 125 ml (1).jpg" alt="Body Shampoo Image">
+                <h3>B Silent Night Time Bath Concentrate 125 ml</h3>
+                <p class="price">Cmimi:1.400 ALL</p>
+                <p class="status out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+<div class="product-section" id="shower-gel">
+    <div class="product-category">
+        <h2>Shower Gel</h2>
+        <div class="product-list">
+           
+            <div class="product-item">
+                <img src="Nuxe Prodigieux Floral Shower Gel 200ml.jpg" alt="Shower Gel Image">
+                <h3>Nuxe Prodigieux Floral Shower Gel 200ml</h3>
+                <p class="price">Cmimi:1.400 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Le Labo Another 13 Perfuming Shower Gel 237ml.jpg" alt="Shower Gel Image">
+                <h3>Le Labo Another 13 Perfuming Shower Gel 237ml</h3>
+                <p class="price">Cmimi:1.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Cowshed Calming Bath And Shower Gel 300 ml.jpg" alt="Shower Gel Image">
+                <h3>Cowshed Calming Bath And Shower Gel 300 ml</h3>
+                <p class="price">Cmimi:1.100 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Compania Delle Indie Shower Gel 21 250ml.jpg" alt="Shower Gel Image">
+                <h3>Compania Delle Indie Shower Gel 21 250ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Compania Delle Indie Shower Gel 19 250ml.jpg" alt="Shower Gel Image">
+                <h3>Compania Delle Indie Shower Gel 19 250ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Compania Delle Indie Shower Gel 11 250ml.jpg" alt="Shower Gel Image">
+                <h3>Compania Delle Indie Shower Gel 11 250ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="product-section" id="body-spray">
+    <div class="product-category">
+        <h2>Body Spray</h2>
+        <div class="product-list">
+            
+            <div class="product-item">
+                <img src="Clarins Sun Care Oil Mist Body&Hair 150ml.jpg" alt="Body Spray Image">
+                <h3>Clarins Sun Care Oil Mist Body&Hair 150ml</h3>
+                <p class="price">Cmimi:1.300 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Lancome Fix It Forget It Setting Mist 100ml.jpg" alt="Body Spray Image">
+                <h3>Lancome Fix It Forget It Setting Mist 100ml</h3>
+                <p class="price">Cmimi:1.200 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Perfume Mist 40 90ml .jpg" alt="Body Spray Image">
+                <h3>Sol De Janeiro Perfume Mist 40 90ml</h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Perfume Mist 48 90ml .jpg" alt="Body Spray Image">
+                <h3>Sol De Janeiro Perfume Mist 48 90ml</h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Perfume Mist 71 90ml .jpg" alt="Body Spray Image">
+                <h3>Sol De Janeiro Perfume Mist 71 90ml </h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Rio Radiance Mist 90 ml.jpg" alt="Body Spray Image">
+                <h3>Sol De Janeiro Rio Radiance Mist 90 ml</h3>
+                <p class="price">Cmimi:2.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Urban Decay All Nighter Vitamin C Setting Spray 118ml.jpg" alt="Body Spray Image">
+                <h3>Urban Decay All Nighter Vitamin C Setting Spray 118ml</h3>
+                <p class="price">Cmimi:1.400 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Victoria's Secret Autumn Shore Body Mist 250ml.jpg" alt="Body Spray Image">
+                <h3>Victoria's Secret Autumn Shore Body Mist 250ml</h3>
+                <p class="price">Cmimi:1.800 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Victoria's Secret Love Spell Cashmere Fragrance Mist 250ml.jpg" alt="Body Spray Image">
+                <h3>Victoria's Secret Love Spell Cashmere Fragrance Mist 250ml</h3>
+                <p class="price">Cmimi:1.800 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div class="product-section" id="sets">
+    <div class="product-category">
+        <h2>Sete</h2>
+        <div class="product-list">
+            
+            <div class="product-item">
+                <img src="Fenty Skin Start' R Set.jpg" alt="Set Image">
+                <h3>Fenty Skin Start' R Set</h3>
+                <p class="price">Cmimi:4.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Bottegga Verde Incantevole Eleganza Set.jpg" alt="Set Image">
+                <h3>Bottegga Verde Incantevole Eleganza Set</h3>
+                <p class="price">Cmimi:3.500 ALL</p>
+                <p class="status  out-of-stock">Gjendja:Out of stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Bottegga Verde Splendore Set.jpg" alt="Set Image">
+                <h3>Bottegga Verde Splendore Set</h3>
+                <p class="price">Cmimi:3.500 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Bum Bum Jet 68 Set .jpg" alt="Set Image">
+                <h3>Sol De Janeiro Bum Bum Jet 68 Set</h3>
+                <p class="price">Cmimi:3.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            <div class="product-item">
+                <img src="Sol De Janeiro Bum Bum Jet 62 Set .jpg" alt="Set Image">
+                <h3>Sol De Janeiro Bum Bum Jet 62 Set</h3>
+                <p class="price">Cmimi:3.000 ALL</p>
+                <p class="status" style="color: green;">Gjendja:In stock</p>
+                <button class="add-to-cart">Shto në Shportë</button>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; Glowy Beauty</p>
+</footer>
+
+</body>
+</html>

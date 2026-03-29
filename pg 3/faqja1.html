@@ -1,0 +1,1149 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte Koreane</title>
+    <link rel="stylesheet" href="faqja1.css">
+    <script>
+        function searchProduct(sectionId, searchTerm) {
+            let products = document.querySelectorAll(`#${sectionId} .product`);
+
+            let found = false;
+            
+           
+            products.forEach(product => {
+                product.style.display = 'block'; 
+            });
+
+           
+            products.forEach(product => {
+                let productName = product.querySelector('h3').textContent.toLowerCase();
+                if (!productName.includes(searchTerm.toLowerCase())) {
+                    product.style.display = 'none'; 
+                } else {
+                    found = true;
+                }
+            });
+
+            
+            if (found) {
+                let matchingProduct = document.querySelector(`#${sectionId} .product[style*="display: block"]`);
+
+                if (matchingProduct) {
+                    matchingProduct.scrollIntoView({behavior: 'smooth'});
+                }
+            } else {
+                alert('Nuk u gjet asnjë produkt që përputhet me kërkesën.');
+            }
+        }
+        function toggleDetails(imageElement) {
+    let productElement = imageElement.closest('.product');
+    let details = productElement.querySelector('.product-details');
+
+    if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        details.style.maxHeight = details.scrollHeight + "px";
+    } else {
+        details.style.maxHeight = "0";
+        setTimeout(() => {
+            details.classList.add('hidden');
+        }, 500);
+    }
+}
+
+function addToCart() {
+    alert('Produkti u shtua në shportë!');
+}
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section class="company-banner">
+            <img src="images\profiliimg.jpg" alt="Glowy Skin Company">
+            <h1>PRODUKTET KOREANE</h1>
+            <h3>Glowy Skin</h3><br>
+        </section>
+
+        <nav class="horizontal-nav">
+            <ul>
+                <li><a href="#makeup">Makeup</a></li>
+                <li><a href="#lekura">Kujdesi per Lekuren</a></li>
+                <li><a href="#floket">Kujdesi per Floket</a></li>
+                <li><a href="#trupi">Kujdesi per Trupin</a></li>
+            </ul>
+        </nav>
+        <section id="makeup">
+            <h2>Makeup</h2>
+            <div class="search-container">
+                <input type="text" id="makeupSearchInput" placeholder="Kërko produktin...">
+                <button onclick="searchProduct('makeup', document.getElementById('makeupSearchInput').value)">Search</button>
+            </div>
+            <div class="product-container">
+            <div class="product">
+                <img src="images\jellydoughblush.webp" alt="Blush"  onclick="toggleDetails(this)">
+                <h3>Jelly Dough Blush <br> Holika Holika </h3>
+                <div class="product-details hidden">
+                <label for="colorSelect1">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color1Red" name="color1" value="Red">
+                    <label for="color1Red" class="color-box" style="background-color: red;"></label>
+                    
+                    <input type="radio" id="color1Pink" name="color1" value="Pink">
+                    <label for="color1Pink" class="color-box" style="background-color: pink;"></label>
+                    
+                    <input type="radio" id="color1Orchid" name="color1" value="Orchid">
+                    <label for="color1Peach" class="color-box" style="background-color: orchid;"></label>
+                    
+                    <input type="radio" id="color1Coral" name="color1" value="Coral">
+                    <label for="color1Coral" class="color-box" style="background-color: coral;"></label>
+                    
+                    <input type="radio" id="color1Palevioletred" name="color1" value="Palevioletred">
+                    <label for="color1Plum" class="color-box" style="background-color: palevioletred;"></label>
+                </div>
+                <br><label for="sizeSelect">Përmasat :</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1000</span>
+                    <span class="current-price">750</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>     
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\pasnowfublush.jpg" alt="Blush"  onclick="toggleDetails(this)">
+                <h3>Blush Stick <br>Pasnowfu</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color2Red" name="color2" value="Red">
+                    <label for="color2Red" class="color-box" style="background-color: rgb(211, 34, 34);"></label>
+                    
+                    <input type="radio" id="color2Pink" name="color2" value="Pink">
+                    <label for="color2Pink" class="color-box" style="background-color: rgb(205, 81, 101);"></label>
+                    
+                    <input type="radio" id="color2Orange" name="color2" value="Orange">
+                    <label for="color2Peach" class="color-box" style="background-color: rgb(188, 139, 65);"></label>
+                    
+                    <input type="radio" id="color2Coral" name="color2" value="Coral">
+                    <label for="color2Coral" class="color-box" style="background-color: rgb(176, 84, 50);"></label>
+                    
+                    <input type="radio" id="color2Purple" name="color2" value="Purple">
+                    <label for="color2Plum" class="color-box" style="background-color: rgb(132, 47, 132);"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1200</span>
+                    <span class="current-price">1000</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div> 
+            </div>
+            </div>
+
+            <div class="product">
+                <img src="images\juicypangblush.webp" alt="Blush"  onclick="toggleDetails(this)">
+                <h3>Blush Likuid <br>Juicy Pang</h3>
+                <div class="product-details hidden">
+                    <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                    <div class="color-options">
+                        <input type="radio" id="color3Red" name="color3" value="Red">
+                        <label for="color3Red" class="color-box" style="background-color: rgb(214, 68, 68);"></label>
+            
+                        <input type="radio" id="color3Plum" name="color3" value="Plum">
+                        <label for="color3Plum" class="color-box" style="background-color: rgb(168, 31, 168);"></label>
+            
+                        <input type="radio" id="color3Pink" name="color3" value="Pink">
+                        <label for="color3Pink" class="color-box" style="background-color: rgb(225, 97, 118);"></label>
+            
+                        <input type="radio" id="color3Coral" name="color3" value="Coral">
+                        <label for="color3Coral" class="color-box" style="background-color: coral;"></label>
+                    </div>
+            <br> <label for="sizeSelect">Përmasat (ml):</label>
+            <select id="sizeSelect" name="size" class="size-dropdown">
+                <option value="30ml">30ml</option>
+                <option value="50ml">50ml</option>
+                <option value="100ml">100ml</option>
+            </select>
+            <div class="product-price">
+                <span class="price-label">Çmimi(leke):</span>
+                <span class="current-price">800</span>
+                <p>(500leke diference midis permasave)</p>
+              </div>  
+              <div class="availability out-of-stock">Jo ne gjendje</div> 
+              <div class="quantity-container">
+                <label for="quantitySelect">Sasia:</label>
+                <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+            </div>
+            <div class="button-container">
+                <button class="add-to-cart"  onclick="addToCart()">Shto në Shportë</button>
+                <a href="bli.html" class="buy-now">Bli</a>
+            </div>
+        </div>
+        </div>
+            <div class="product">
+                <img src="images\rom&ndlipstick.jpg" alt="Lipstick"  onclick="toggleDetails(this)">
+                <h3>Buzëkuq Zero Mat <br>Rom & Nd</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color4Red" name="color4" value="Red">
+                    <label for="color4Red" class="color-box" style="background-color: rgb(147, 46, 46);"></label>
+                    
+                    <input type="radio" id="color4Pink" name="color4" value="Pink">
+                    <label for="color4Pink" class="color-box" style="background-color: rgb(216, 34, 64);"></label>
+                    
+                    <input type="radio" id="color4Brown" name="color4" value="Brown">
+                    <label for="color4Peach" class="color-box" style="background-color: rgb(97, 11, 11);"></label>
+                    
+                    <input type="radio" id="color4Coral" name="color4" value="Coral">
+                    <label for="color4Coral" class="color-box" style="background-color: rgb(201, 83, 40);"></label>
+                    
+                    <input type="radio" id="color4Plum" name="color4" value="Plum">
+                    <label for="color4Plum" class="color-box" style="background-color: rgb(189, 49, 189);"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1500</span>
+                    <span class="current-price">1200</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div> 
+                  <div class="availability in-stock">Në gjendje</div>
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>  
+                <div class="button-container">
+                    <button class="add-to-cart"  onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div> 
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\innisfreelipstick.webp" alt="Lipstick"  onclick="toggleDetails(this)">
+                <h3>Buzëkuq Airy Mat <br> InnisFree</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color5Red" name="color5" value="Red">
+                    <label for="color5Red" class="color-box" style="background-color: red;"></label>
+                    
+                    <input type="radio" id="color5Pink" name="color5" value="Pink">
+                    <label for="color5Pink" class="color-box" style="background-color: rgb(219, 91, 113);"></label>
+                    
+                    <input type="radio" id="color5Brown" name="color5" value="Brown">
+                    <label for="color5Peach" class="color-box" style="background-color: brown;"></label>
+                    
+                    <input type="radio" id="color5Coral" name="color5" value="Coral">
+                    <label for="color5Coral" class="color-box" style="background-color: rgb(214, 103, 63);"></label>
+                    
+                    <input type="radio" id="color5Plum" name="color5" value="Plum">
+                    <label for="color5Plum" class="color-box" style="background-color: rgb(132, 61, 132);"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">€1200</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability out-of-stock">Jo ne gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart"  onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\etudelipbalm.webp" alt="LipBalm"  onclick="toggleDetails(this)">
+                <h3>Lip Balm - Frutor <br> Etude</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color6Red" name="color6" value="Red">
+                    <label for="color6Red" class="color-box" style="background-color: rgb(214, 70, 70);"></label>
+                    
+                    <input type="radio" id="color6Pink" name="color6" value="Pink">
+                    <label for="color6Pink" class="color-box" style="background-color: rgb(210, 66, 90);"></label>
+                    
+                    <input type="radio" id="color6Brown" name="color6" value="Brown">
+                    <label for="color6Peach" class="color-box" style="background-color: rgb(120, 62, 62);"></label>
+                    
+                    <input type="radio" id="color6Coral" name="color6" value="Coral">
+                    <label for="color6Coral" class="color-box" style="background-color: rgb(183, 63, 20);"></label>
+                    
+                    <input type="radio" id="color6Plum" name="color6" value="Plum">
+                    <label for="color6Plum" class="color-box" style="background-color: rgb(202, 73, 202);"></label>
+                </div>
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="10ml">30ml</option>
+                    <option value="20ml">50ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">850</span>
+                    <span class="current-price">600</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>   
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\tirtirfoundation.jpg" alt="Fondatine"  onclick="toggleDetails(this)">
+                <h3>Fondatine - Mask Fit Me Shtrese te Kuqe <br> TirTir</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color7Moccasin" name="color7" value="Moccasin">
+                    <label for="color7Red" class="color-box" style="background-color: moccasin;"></label>
+                    
+                    <input type="radio" id="color2Burlywood" name="color7" value="Burlywood">
+                    <label for="color7Peach" class="color-box" style="background-color: burlywood;"></label>
+                    
+                    <input type="radio" id="color3Navajowhite" name="color7" value="Navajowhite">
+                    <label for="color7Pink" class="color-box" style="background-color: rgb(173, 134, 76)"></label>
+                    
+                    <input type="radio" id="color2Brown" name="color2" value="Brown">
+                    <label for="color7Coral" class="color-box" style="background-color: rgb(140, 63, 63);"></label>
+                    
+                    <input type="radio" id="color7Brown" name="color7" value="Brown">
+                    <label for="color7Plum" class="color-box" style="background-color: rgb(72, 12, 12);"></label>
+                </div>
+                <br><label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">€3000</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>  
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\etudedblfoundation.jpg" alt="Fondatine"  onclick="toggleDetails(this)">
+                <h3>Fondatine - Double Lasting <br> Etude</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color8Moccasin" name="color8" value="Moccasin">
+                    <label for="color8Red" class="color-box" style="background-color: moccasin;"></label>
+                    
+                    <input type="radio" id="color8Burlywood" name="color8" value="Burlywood">
+                    <label for="color8Peach" class="color-box" style="background-color: rgb(210, 178, 136);"></label>
+                    
+                    <input type="radio" id="color8Navajowhite" name="color8" value="Navajowhite">
+                    <label for="color8Pink" class="color-box" style="background-color: rgb(179, 136, 71)"></label>
+                    
+                    <input type="radio" id="color8Brown" name="color8" value="Brown">
+                    <label for="color8Coral" class="color-box" style="background-color: rgb(140, 63, 63);"></label>
+                    
+                    <input type="radio" id="color8Brown" name="color8" value="Brown">
+                    <label for="color8Plum" class="color-box" style="background-color: rgb(86, 15, 15);"></label>
+                </div>
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">4500</span>
+                    <span class="current-price">3500</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>  
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\ktabrizfoundation.jpg" alt="Fondatine"  onclick="toggleDetails(this)">
+                <h3>Fondatine - 2ne1 <br> Ktabriz</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color9Moccasin" name="color9" value="Moccasin">
+                    <label for="color9Red" class="color-box" style="background-color: rgb(210, 194, 167);"></label>
+                    
+                    <input type="radio" id="color9Burlywood" name="color9" value="Burlywood">
+                    <label for="color9Peach" class="color-box" style="background-color: rgb(203, 167, 120);"></label>
+                    
+                    <input type="radio" id="color9Navajowhite" name="color9" value="Navajowhite">
+                    <label for="color9Pink" class="color-box" style="background-color: rgb(161, 127, 75)"></label>
+                    
+                    <input type="radio" id="color9Brown" name="color9" value="Brown">
+                    <label for="color9Coral" class="color-box" style="background-color: rgb(165, 70, 70);"></label>
+                    
+                    <input type="radio" id="color9Brown" name="color9" value="Brown">
+                    <label for="color9Plum" class="color-box" style="background-color: rgb(58, 9, 9);"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">5000</span>
+                    <span class="current-price">3800</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability out-of-stock">Jo ne gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\misshaplhighlighter.webp" alt="Highlighter"  onclick="toggleDetails(this)">
+                <h3>Highlighter - Pink Light <br> Missha</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color10Red" name="color10" value="Red">
+                    <label for="color10Red" class="color-box" style="background-color: rgb(223, 141, 141);"></label>
+                    
+                    <input type="radio" id="color10Pink" name="color10" value="Pink">
+                    <label for="color10Pink" class="color-box" style="background-color: pink;"></label>
+                    
+                    <input type="radio" id="color10Turquoise" name="color10" value="Turquoise">
+                    <label for="color10Peach" class="color-box" style="background-color: rgb(141, 218, 211);"></label>
+                    
+                    <input type="radio" id="color10Coral" name="color10" value="Coral">
+                    <label for="color10Coral" class="color-box" style="background-color: rgb(239, 149, 116);"></label>
+                    
+                    <input type="radio" id="color10Plum" name="color10" value="Plum">
+                    <label for="color10Plum" class="color-box" style="background-color: plum;"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">600</span>
+                    <span class="current-price">450</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>   
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+        </div>
+    </div>
+            <div class="product">
+                <img src="images\kahihighlighterstick.webp" alt="Highlighter"   onclick="toggleDetails(this)" >
+                <h3>Highlighter Stick <br> Kahi</h3>
+                <div class="product-details hidden">
+                <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                <div class="color-options">
+                    <input type="radio" id="color11Red" name="color11" value="Red">
+                    <label for="color11Red" class="color-box" style="background-color: rgb(209, 146, 146);"></label>
+                    
+                    <input type="radio" id="color11Pink" name="color11" value="Pink">
+                    <label for="color11Pink" class="color-box" style="background-color: rgb(231, 169, 180);"></label>
+                    
+                    <input type="radio" id="color11Yellow" name="color11" value="Yellow">
+                    <label for="color11Peach" class="color-box" style="background-color: rgb(230, 230, 165);"></label>
+                    
+                    <input type="radio" id="color11Coral" name="color11" value="Coral">
+                    <label for="color11Coral" class="color-box" style="background-color: coral;"></label>
+                    
+                    <input type="radio" id="color11Plum" name="color11" value="Plum">
+                    <label for="color11Plum" class="color-box" style="background-color: rgb(230, 144, 230);"></label>
+                </div>
+                <br> <label for="sizeSelect">Përmasat:</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">small</option>
+                    <option value="50ml">medium</option>
+                    <option value="100ml">large</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">1500</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>   
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="checkout.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+                <div class="product">
+                    <img src="images\joahlqhighlighter.jpg"  alt="Highlighter"   onclick="toggleDetails(this)">
+                    <h3>Highlighter Likuid <br> Joah</h3>
+                    <div class="product-details hidden">
+                      <label for="colorSelect2">Zgjidhni ngjyrën:</label>
+                    <div class="color-options">
+                        <input type="radio" id="color12Red" name="color12" value="Red">
+                        <label for="color12Red" class="color-box" style="background-color: rgb(219, 123, 123);"></label>
+                        
+                        <input type="radio" id="color12Pink" name="color12" value="Pink">
+                        <label for="color12Pink" class="color-box" style="background-color: rgb(231, 186, 194);"></label>
+                         
+                    <input type="radio" id="color12Turquoise" name="color12" value="Turquoise">
+                    <label for="color12Peach" class="color-box" style="background-color: rgb(141, 218, 211);"></label>
+                    
+                        <input type="radio" id="color12" name="color12" value="Coral">
+                        <label for="color12Coral" class="color-box" style="background-color: rgb(185, 218, 134);"></label>
+                        
+                        <input type="radio" id="color12Plum" name="color12" value="Plum">
+                        <label for="color12Plum" class="color-box" style="background-color: plum;"></label>
+                    </div>
+                    <br> <label for="sizeSelect">Përmasat (ml):</label>
+                    <select id="sizeSelect" name="size" class="size-dropdown">
+                        <option value="30ml">30ml</option>
+                        <option value="50ml">50ml</option>
+                        <option value="100ml">100ml</option>
+                    </select>
+                    <div class="product-price">
+                        <span class="price-label">Çmimi(leke):</span>
+                        <span class="old-price">1800</span>
+                        <span class="current-price">1650</span>
+                        <p>(500leke diference midis permasave)</p>
+                      </div>  
+                      <div class="availability out-of-stock">Jo ne gjendje</div> 
+                      <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="bli.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+                  </div>
+        
+        </section>
+
+        <section id="lekura">
+            <h2>Kujdesi per Lekuren</h2>
+            <div class="search-container">
+            <input type="text" id="lekuraSearchInput" placeholder="Kërko produktin..." onkeyup="searchProduct('lekura', this.value)">
+            <button onclick="searchProduct('lekura', document.getElementById('lekuraSearchInput').value)">Search</button>
+        </div>
+            <div class="product-container">
+            <div class="product">
+                <img src="images\reviveeyeserumbjofjs.jpg" alt="Krem Sysh"   onclick="toggleDetails(this)">
+                <h3>Serum per Syte -Revive <br> Beauty Of Joseon </h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="10ml">30ml</option>
+                    <option value="20ml">50ml</option>
+                    <option value="30ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1500</span>
+                    <span class="current-price">1300</span>
+                    <p>(500leke diference midis permasave)</p>
+                    <div class="availability out-of-stock">Jo ne gjendje</div> 
+                    <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="bli.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+                  </div>  
+            </div>
+            <div class="product">
+                <img src="images\phytoaquacream.jpg" alt="Krem Hidratues"   onclick="toggleDetails(this)">
+                <h3>Krem Hidratues <br> Phyto Aqua </h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">€2300</span>
+                    <span class="current-price">2000</span>
+                    <p>(500leke diference midis permasave)</p>
+                    <div class="availability out-of-stock">Jo ne gjendje</div> 
+                    <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="checkout.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div class="product">
+                <img src="images\torridenhdrcream.webp" alt="Krem Hidratues"   onclick="toggleDetails(this)">
+                <h3>Krem Hidratues<br>Torriden </h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">1600</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+              <img src="images\torridenhdrserum.jpg"  alt="Moisturizing Serum"   onclick="toggleDetails(this)">
+              <h3>Hyaluronic Acid Serum<br>Torriden </h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">10ml</option>
+                    <option value="50ml">20ml</option>
+                    <option value="100ml">30ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1900</span>
+                    <span class="current-price">1650</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\glowserum.jpg" alt="Serum"   onclick="toggleDetails(this)">
+                <h3>Hyaluronic Acid Serum<br>Glow </h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">10ml</option>
+                    <option value="50ml">20ml</option>
+                    <option value="100ml">30ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1400</span>
+                    <span class="current-price">12500</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div> 
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\skin1004spf.webp" alt="Krem Dielli"   onclick="toggleDetails(this)">
+                <h3>Krem Mbrojtes Dielli - Spf 50<br>Skin 1004 </h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">20ml</option>
+                    <option value="50ml">30ml</option>
+                    <option value="100ml">50ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">900</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div> 
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\beautyofjoseonspf.webp" alt="Spf"   onclick="toggleDetails(this)">
+                <h3>Krem Mbrojtes Dielli -Spf 50<br>Beauty Of Joseon</h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1500</span>
+                    <span class="current-price">1300</span>
+                    <p>(500leke diference midis permasave)</p>
+                </div> 
+                    <div class="availability out-of-stock">Jo ne gjendje</div> 
+                    <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="bli.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+        </div>
+            <div class="product">
+                <img src="images\mizoncream.jpg" alt="Krem Rigjenerues"   onclick="toggleDetails(this)">
+                <h3>Krem Rigjenerues - Prejardhje Kermilli<br> Mizon</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">2000</span>
+                    <span class="current-price">1800</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="floket">
+            <h2>Kujdesi per Floket</h2>
+            <div class="search-container">
+            <input type="text" id="floketSearchInput" placeholder="Kërko produktin..." onkeyup="searchProduct('floket', this.value)">
+            <button onclick="searchProduct('floket', document.getElementById('floketSearchInput').value)">Search</button>
+        </div>
+            <div class="product-container">
+            <div class="product">
+                <img src="images\daenggimeorishampo.png" alt="Shampo Flokesh"   onclick="toggleDetails(this)">
+                <h3>Shampo Per Floke Te Yndyrshem <br> Daeng Gi Meori</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1700</span>
+                    <span class="current-price">1550</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\kundalshampo.webp" alt="Shampo Flokesh" onclick="toggleDetails(this)">
+                <h3>Shampo Per Floke Te Demtuar<br>Kundal</h3>
+                <div class="product-details hidden">
+                    <br> 
+                    <label for="sizeSelect">Përmasat (ml):</label>
+                    <select id="sizeSelect" name="size" class="size-dropdown">
+                        <option value="30ml">30ml</option>
+                        <option value="50ml">50ml</option>
+                        <option value="100ml">100ml</option>
+                    </select>
+                    <div class="product-price">
+                        <span class="price-label">Çmimi(leke):</span>
+                        <span class="current-price">1300</span>
+                        <p>(500leke diference midis permasave)</p>
+                    </div>
+                    <div class="availability out-of-stock">Jo ne gjendje</div> 
+                    <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="bli.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="images\kundalserum.png" alt="Serum Flokesh" onclick="toggleDetails(this)">
+                <h3>Serum Per Floke Te Demtuar<br>Kundal</h3>
+                <div class="product-details hidden">
+                    <br> 
+                    <label for="sizeSelect">Përmasat (ml):</label>
+                    <select id="sizeSelect" name="size" class="size-dropdown">
+                        <option value="30ml">30ml</option>
+                        <option value="50ml">50ml</option>
+                        <option value="100ml">100ml</option>
+                    </select>
+                    <div class="product-price">
+                        <span class="price-label">Çmimi(leke):</span>
+                        <span class="current-price">1200</span>
+                        <p>(500leke diference midis permasave)</p>
+                    </div>  
+                    <div class="availability in-stock">Në gjendje</div> 
+                    <div class="quantity-container">
+                        <label for="quantitySelect">Sasia:</label>
+                        <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                    </div>
+                    <div class="button-container">
+                        <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                        <a href="bli.html" class="buy-now">Bli</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="images\miseensceneoil.jpg" alt="Vajra Flokesh"   onclick="toggleDetails(this)">
+                <h3>Vaj për Ndihmë Rritje<br> Mise En Scene</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="10ml">30ml</option>
+                    <option value="20ml">50ml</option>
+                    <option value="30ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1350</span>
+                    <span class="current-price">1100</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\miseenscperfectserume.jpg" alt="Vajra Flokesh"  onclick="toggleDetails(this)">
+                <h3>Vaj Per Floket- Perfect Serum<br>Mise En Scene </h3>
+                <div class="product-details hidden">
+                <br>  <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">10ml</option>
+                    <option value="50ml">20ml</option>
+                    <option value="100ml">30ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">800</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+            </div>
+        </div>
+    </div>
+            <div class="product">
+                <img src="images\&honeyoil.webp" alt="Vajra Flokesh"   onclick="toggleDetails(this)">
+                <h3>Vaj Per Floket - Deep Moist<br>&Honey</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="10ml">30ml</option>
+                    <option value="20ml">50ml</option>
+                    <option value="30ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1200</span>
+                    <span class="current-price">950</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <section id="trupi">
+            <h2>Kujdesi per Trupin</h2>
+            <div class="search-container">
+            <input type="text" id="trupiSearchInput" placeholder="Kërko produktin..." onkeyup="searchProduct('trupi', this.value)">
+            <button onclick="searchProduct('trupi', document.getElementById('trupiSearchInput').value)">Search</button>
+        </div>
+            <div class="product-container">
+            <div class="product">
+                <img src="images\pyunkangyulshampo.jpg" alt="Shampo Trupi"   onclick="toggleDetails(this)">
+                <h3>Shampo Trupi-Low pH<br>Pyunkang Yul</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1450</span>
+                    <span class="current-price">1200</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability out-of-stock">Jo ne gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\mykierishampo.avif" alt="Shampo Trupi"   onclick="toggleDetails(this)">
+                <h3>Shampo Trupi <br>MyKirei</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">850</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div>
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div> 
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\atobarriermousterizer.jpg" alt="Moisturizer"  onclick="toggleDetails(this)">
+                <h3>Moisturizer - Strengthenin Skin Barrier<br> AtoBarrier 365</h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">780</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\beautyofjsmousterizer.jpg" alt="Moisturizer"  onclick="toggleDetails(this)">
+                <h3>Moisturizer- Red Bean<br> Beauty Of Joseon</h3>
+                <div class="product-details hidden">
+                <br><label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">20ml</option>
+                    <option value="50ml">30ml</option>
+                    <option value="100ml">50ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="old-price">1200</span>
+                    <span class="current-price">1000</span>
+                  <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability out-of-stock">Jo ne gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <img src="images\centelasalmonms.webp" alt="Body Lotion"   onclick="toggleDetails(this)">
+                <h3>Body Lotion- Salmon Fruity <br>Centella </h3>
+                <div class="product-details hidden">
+                <br> <label for="sizeSelect">Përmasat (ml):</label>
+                <select id="sizeSelect" name="size" class="size-dropdown">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+                <div class="product-price">
+                    <span class="price-label">Çmimi(leke):</span>
+                    <span class="current-price">1100</span>
+                    <p>(500leke diference midis permasave)</p>
+                  </div>  
+                  <div class="availability in-stock">Në gjendje</div> 
+                  <div class="quantity-container">
+                    <label for="quantitySelect">Sasia:</label>
+                    <input type="number" id="quantitySelect" name="quantity" value="1" min="1" max="10">
+                </div>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart()">Shto në Shportë</button>
+                    <a href="bli.html" class="buy-now">Bli</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+    </div>
+</body>
+</html>
